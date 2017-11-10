@@ -89,7 +89,7 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
 </section><section id="typische-vorteile" class="slide level2">
 <h2>Typische Vorteile</h2>
 <ul>
-<li><p>die Veröffentlichung einer Menge von Informationsprodukte für unterschiedliche Benutzergruppen und über mehrere Releases hinweg unterstützen</p></li>
+<li><p>die Veröffentlichung einer Menge von Informationsprodukten für unterschiedliche Benutzergruppen und über mehrere Releases hinweg unterstützen</p></li>
 <li><p>neue Zusammenstellungen von Inhalten einführen, die neue Inhaltstypen erfordern (z.B. Hardware Dokumentation, Geschäftsprozesse usw.)</p></li>
 </ul>
 <p>(<a href="https://github.com/dita-community/dita-demo-content-collection/blob/dita-1.3/README.md" title="dita-demo-content-collection/README.md at dita-1.3 · dita-community/dita-demo-content-collection">dita-demo-content-collection/README.md at dita-1.3 · dita-community/dita-demo-content-collection</a>)</p>
@@ -101,18 +101,17 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
 </ul>
 </section><section id="minimalismus" class="slide level2">
 <h2>Minimalismus</h2>
-<blockquote>
-<p>Per JoAnn Hackos, the four basic principles of minimalism are</p>
-</blockquote>
-<blockquote>
-<p>♦ Principle 1: Choose an action-oriented approach ♦ Principle 2: Anchor the tool in the task domain ♦ Principle 3: Support error recognition and recovery ♦ Principle 4: Support reading to do, study, and locate</p>
-</blockquote>
-<p><a href="https://everypageispageone.com/2013/07/02/what-is-minimalism/" title="What is Minimalism? | Every Page is Page One">What is Minimalism? | Every Page is Page One</a></p>
-</section><section id="minimalismus-1" class="slide level2">
-<h2>Minimalismus</h2>
-<blockquote>
-<p>As Carroll puts it:</p>
-</blockquote>
+<p>Nach JoAnn Hackos</p>
+<ul>
+<li class="fragment">Principle 1: Choose an action-oriented approach</li>
+<li class="fragment">Principle 2: Anchor the tool in the task domain</li>
+<li class="fragment">Principle 3: Support error recognition and recovery</li>
+<li class="fragment">Principle 4: Support reading to do, study, and locate</li>
+</ul>
+<p>Zitiert nach: <a href="https://everypageispageone.com/2013/07/02/what-is-minimalism/" title="What is Minimalism? | Every Page is Page One">What is Minimalism? | Every Page is Page One</a></p>
+</section><section class="slide level2">
+
+<p>J.M. Carrol:</p>
 <blockquote>
 <p>People are situated in a world more real to them than a series of steps, a world that provides rich context and convention for everything they do. People are always already trying things out, thinking things through, trying to relate what they already know to what is going on, recovering from errors. In a word, they are too busy learning to make much use of the instructions. This is the paradox of sense-making.</p>
 </blockquote>
@@ -122,10 +121,12 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
 <blockquote>
 <p>In object-oriented programming, inheritance is a way to form new classes using classes that have already been defined. ...</p>
 </blockquote>
+<blockquote>
 <p>In DITA, child topics or elements inherit attributes from their parents. For example, metadata applied to a section of a DITA file will automatically be applied to topics contained in the section.</p>
+</blockquote>
 <p><a href="http://dita-ot.sourceforge.net/doc/ot-userguide/xhtml/core_vocabulary/inheritance.html" title="Inheritance">Inheritance</a></p>
-</section><section id="vererbung-und-spezialisierung" class="slide level2">
-<h2>Vererbung und Spezialisierung</h2>
+</section><section class="slide level2">
+
 <blockquote>
 <p>Inheritance also plays an important role in DITA specialization, which allows you to extend a base topic to match your specific requirements by defining only the differences between it and its base topic; the bulk of the specialized definition is inherited.</p>
 </blockquote>
@@ -179,13 +180,13 @@ This is an information useful for the bar audience.
 <blockquote>
 <p>A topic is a unit of information with a title and content, short enough to be specific to a single subject or answer a single question, but long enough to make sense on its own and be authored as a unit.</p>
 </blockquote>
-</section><section id="topics-1" class="slide level2">
-<h2>Topics</h2>
+</section><section class="slide level2">
+
 <blockquote>
 <p>Topics are the basis for high-quality information. They should be short enough to be easily readable, but long enough to make sense on their own.</p>
 </blockquote>
-</section><section id="topics-2" class="slide level2">
-<h2>Topics</h2>
+</section><section class="slide level2">
+
 <blockquote>
 <p>Information typing is the practice of identifying types of topics that contain distinct kinds information, such as concepts, tasks, and reference information. Topics that answer different kinds of questions can be categorized as different information types. The base topic types provided by DITA ( a generic topic, plus concept, task, and reference ) provide a usable starter set that can be adopted for immediate authoring.</p>
 </blockquote>
@@ -221,7 +222,7 @@ This is an information useful for the bar audience.
 <li><em>Link</em>-Beziehungen</li>
 </ul>
 <p>Siehe zu den Maps: <a href="https://www.oxygenxml.com/dita/styleguide/webhelp-feedback/Artefact/Maps/c_Working_with_Map_Files.html" title="Purpose of ditamap files">Purpose of ditamap files</a></p>
-<p>Die Maps bestehen vor allem aus topicref-elementen. Diese gehören zur hierarchy und gegebenenfalls tz relationship tables.</p>
+<p>Die Maps bestehen vor allem aus topicref-elementen. Diese gehören zur hierarchy und gegebenenfalls zu relationship tables.</p>
 </section><section id="beispiel-topic-map" class="slide level2">
 <h2>Beispiel topic map</h2>
 <div class="sourceCode"><pre class="sourceCode xml"><code class="sourceCode xml"><span class="kw">&lt;map&gt;</span>
@@ -351,24 +352,20 @@ This is an information useful for the bar audience.
 <span class="kw">&lt;/reference&gt;</span></code></pre></div>
 </section><section id="anpassungspezialisierung" class="slide level2">
 <h2>Anpassung/Spezialisierung</h2>
+<p>Tutorial: <a href="http://www.xiruss.org/tutorials/dita-specialization/" title="DITA Configuration and Specialization Tutorials">DITA Configuration and Specialization Tutorials</a></p>
 </section><section id="geschichte" class="slide level2">
 <h2>Geschichte</h2>
 <p>März 2001: IBM stellt Kern-DTD und XML-Schema fertig</p>
 <p>Mai 2002: Zur Topic-Spezialisierung kommt die Domain-Spezialisierung</p>
 <p>2004 OASIS Technical Commitee</p>
 <p>Februar 2005: IBM übergibt das DITA Open Toolkit an Sourceforge</p>
+</section><section class="slide level2">
+
 <p>Juni 2005: DITA 1.0</p>
 <p>August 2007: DITA 1.1 (neue Bookmap-Spezialisierung)</p>
 <p>2010: DITA 1.2 (Lernobjekte)</p>
 <p>Material: <a href="http://dita.xml.org/book/export/html/1047" title="History of DITA">History of DITA</a></p>
 <p>17.12.2015: DITA 1.3 (Troubleshooting-Topic, Scoped Keys, MathML und Equation-Domains, Relax NG für normative Schemas )</p>
-</section><section id="beispiele" class="slide level2">
-<h2>Beispiele</h2>
-<ul>
-<li><p>DITA-Dokumente: <a href="https://github.com/dita-community/dita-demo-content-collection" title="dita-community/dita-demo-content-collection: DITA Demonstration Content Collection">dita-community/dita-demo-content-collection: DITA Demonstration Content Collection</a>°°°°°</p></li>
-<li><p>DITA-basierte Website: <a href="http://www.thecontentera.com/live/php/viewpage.php?topic=home.dita" title="The Content Era is here">The Content Era is here</a></p></li>
-<li><p>DITA-basiertes CMS: <a href="http://intuillion.com/products/ditatoo/" title="DITA Content Management | DITAToo DITA CCMS: Your Easy Entry to DITA">DITAToo DITA CCMS</a></p></li>
-</ul>
 </section></section>
 <section><section id="anwendungsmöglichkeiten" class="titleslide slide level1"><h1>Anwendungsmöglichkeiten</h1></section><section id="component-based-content-management-systems" class="slide level2">
 <h2>Component Based Content Management Systems</h2>
@@ -376,6 +373,13 @@ This is an information useful for the bar audience.
 </section><section id="dita-in-firmen" class="slide level2">
 <h2>DITA in Firmen</h2>
 <p><a href="http://www.ditawriter.com/companies-using-dita/" title="Companies Using DITA – DITA Writer">Companies Using DITA – DITA Writer</a></p>
+</section><section id="beispiele" class="slide level2">
+<h2>Beispiele</h2>
+<ul>
+<li><p>DITA-Dokumente: <a href="https://github.com/dita-community/dita-demo-content-collection" title="dita-community/dita-demo-content-collection: DITA Demonstration Content Collection">dita-community/dita-demo-content-collection: DITA Demonstration Content Collection</a>°°°°°</p></li>
+<li><p>DITA-basierte Website: <a href="http://www.thecontentera.com/live/php/viewpage.php?topic=home.dita" title="The Content Era is here">The Content Era is here</a></p></li>
+<li><p>DITA-basiertes CMS: <a href="http://intuillion.com/products/ditatoo/" title="DITA Content Management | DITAToo DITA CCMS: Your Easy Entry to DITA">DITAToo DITA CCMS</a></p></li>
+</ul>
 </section></section>
 <section><section id="aktuell" class="titleslide slide level1"><h1>Aktuell</h1></section><section id="adobe-dita-world" class="slide level2">
 <h2>Adobe DITA World</h2>

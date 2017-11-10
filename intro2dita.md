@@ -22,7 +22,7 @@
 
 ## Typische Vorteile
 
-- die Veröffentlichung einer Menge von Informationsprodukte für unterschiedliche Benutzergruppen und über mehrere Releases hinweg unterstützen
+- die Veröffentlichung einer Menge von Informationsprodukten für unterschiedliche Benutzergruppen und über mehrere Releases hinweg unterstützen
 
 - neue Zusammenstellungen von Inhalten einführen, die neue Inhaltstypen erfordern (z.B. Hardware Dokumentation, Geschäftsprozesse usw.)
 
@@ -36,19 +36,19 @@
 
 ## Minimalismus
 
-> Per JoAnn Hackos, the four basic principles of minimalism are
+Nach JoAnn Hackos
 
-> ♦ Principle 1: Choose an action-oriented approach
-> ♦ Principle 2: Anchor the tool in the task domain
-> ♦ Principle 3: Support error recognition and recovery
-> ♦ Principle 4: Support reading to do, study, and locate
+> - Principle 1: Choose an action-oriented approach
+> - Principle 2: Anchor the tool in the task domain
+> - Principle 3: Support error recognition and recovery
+> - Principle 4: Support reading to do, study, and locate
 
-[What is Minimalism? | Every Page is Page One](https://everypageispageone.com/2013/07/02/what-is-minimalism/ "What is Minimalism? | Every Page is Page One")
+Zitiert nach: [What is Minimalism? | Every Page is Page One](https://everypageispageone.com/2013/07/02/what-is-minimalism/ "What is Minimalism? | Every Page is Page One")
 
 
-## Minimalismus
+---
 
-> As Carroll puts it:
+J.M. Carrol:
 
 > People are situated in a world more real to them than a series of steps, a world that provides rich context and convention for everything they do. People are always already trying things out, thinking things through, trying to relate what they already know to what is going on, recovering from errors. In a word, they are too busy learning to make much use of the instructions. This is the paradox of sense-making.
 
@@ -58,11 +58,11 @@
 
 > In object-oriented programming, inheritance is a way to form new classes using classes that have already been defined. ...
 
-In DITA, child topics or elements inherit attributes from their parents. For example, metadata applied to a section of a DITA file will automatically be applied to topics contained in the section.
+> In DITA, child topics or elements inherit attributes from their parents. For example, metadata applied to a section of a DITA file will automatically be applied to topics contained in the section.
 
 [Inheritance](http://dita-ot.sourceforge.net/doc/ot-userguide/xhtml/core_vocabulary/inheritance.html "Inheritance")
 
-## Vererbung und Spezialisierung
+--- 
 
 > Inheritance also plays an important role in DITA specialization, which allows you to extend a base topic to match your specific requirements by defining only the differences between it and its base topic; the bulk of the specialized definition is inherited.
 
@@ -128,11 +128,11 @@ This is an information useful for the bar audience.
 > A topic is a unit of information with a title and content, short enough to be specific to a single subject or answer a single question, but long enough to make sense on its own and be authored as a unit.
 
 
-## Topics
+---
 
 > Topics are the basis for high-quality information. They should be short enough to be easily readable, but long enough to make sense on their own.
 
-## Topics
+--- 
 
 > Information typing is the practice of identifying types of topics that contain distinct kinds information, such as concepts, tasks, and reference information. Topics that answer different kinds of questions can be categorized as different information types. The base topic types provided by DITA ( a generic topic, plus concept, task, and reference ) provide a usable starter set that can be adopted for immediate authoring.
 
@@ -169,7 +169,7 @@ Quelle: [DITA topics](https://docs.oasis-open.org/dita/v1.0/archspec/topicover.h
 
 Siehe zu den Maps: [Purpose of ditamap files](https://www.oxygenxml.com/dita/styleguide/webhelp-feedback/Artefact/Maps/c_Working_with_Map_Files.html "Purpose of ditamap files")
 
-Die Maps bestehen vor allem aus topicref-elementen. Diese gehören zur hierarchy und gegebenenfalls tz relationship tables.
+Die Maps bestehen vor allem aus topicref-elementen. Diese gehören zur hierarchy und gegebenenfalls zu relationship tables.
 
 ## Beispiel topic map
 
@@ -309,6 +309,7 @@ References:  [Publication and collection defined](https://www.oxygenxml.com/dita
 
 ## Anpassung/Spezialisierung
 
+Tutorial: [DITA Configuration and Specialization Tutorials](http://www.xiruss.org/tutorials/dita-specialization/ "DITA Configuration and Specialization Tutorials")
 
 ## Geschichte
 
@@ -319,6 +320,8 @@ Mai 2002: Zur Topic-Spezialisierung kommt die Domain-Spezialisierung
 2004 OASIS Technical Commitee
 
 Februar 2005: IBM übergibt das DITA Open Toolkit an Sourceforge
+
+---
 
 Juni 2005: DITA 1.0
 
@@ -331,13 +334,6 @@ Material: [History of DITA](http://dita.xml.org/book/export/html/1047 "History o
 17.12.2015: DITA 1.3 (Troubleshooting-Topic, Scoped Keys, MathML und Equation-Domains, Relax NG für normative Schemas
 )
 
-## Beispiele
-
-- DITA-Dokumente: [dita-community/dita-demo-content-collection: DITA Demonstration Content Collection](https://github.com/dita-community/dita-demo-content-collection "dita-community/dita-demo-content-collection: DITA Demonstration Content Collection")°°°°°
-
-- DITA-basierte Website: [The Content Era is here](http://www.thecontentera.com/live/php/viewpage.php?topic=home.dita "The Content Era is here")
-
-- DITA-basiertes CMS: [DITAToo DITA CCMS](http://intuillion.com/products/ditatoo/ "DITA Content Management | DITAToo DITA CCMS: Your Easy Entry to DITA")
 
 # Anwendungsmöglichkeiten
 
@@ -348,6 +344,14 @@ Material: [History of DITA](http://dita.xml.org/book/export/html/1047 "History o
 ## DITA in Firmen
 
 [Companies Using DITA – DITA Writer](http://www.ditawriter.com/companies-using-dita/ "Companies Using DITA – DITA Writer")
+
+## Beispiele
+
+- DITA-Dokumente: [dita-community/dita-demo-content-collection: DITA Demonstration Content Collection](https://github.com/dita-community/dita-demo-content-collection "dita-community/dita-demo-content-collection: DITA Demonstration Content Collection")°°°°°
+
+- DITA-basierte Website: [The Content Era is here](http://www.thecontentera.com/live/php/viewpage.php?topic=home.dita "The Content Era is here")
+
+- DITA-basiertes CMS: [DITAToo DITA CCMS](http://intuillion.com/products/ditatoo/ "DITA Content Management | DITAToo DITA CCMS: Your Easy Entry to DITA")
 
 # Aktuell
 
@@ -370,6 +374,10 @@ Material: [History of DITA](http://dita.xml.org/book/export/html/1047 "History o
 
 [DITA lernen](https://www.learningdita.de/ "DITA lernen")
 
+
+## Videos
+
+[List of DITA-related Videos – DITA Writer](http://www.ditawriter.com/list-of-dita-related-videos/ "List of DITA-related Videos – DITA Writer")
 
 ## Blogs
 
@@ -451,7 +459,7 @@ M00087-3:samples heinz$ dita --input=sequence.ditamap --format=html5 --output=ou
      [xslt] Warning at xsl:stylesheet on line 12 column 59 of map2html5Impl.xsl:
      [xslt]   Stylesheet module plugin:org.dita.html5:xsl/map2html5Impl.xsl is included or imported more
      [xslt]   than once. This is permitted, but may lead to errors or unexpected behavior
-	 ```
+ ```
 
 ## Input
 
