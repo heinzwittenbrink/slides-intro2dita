@@ -1,6 +1,9 @@
-% DITA-Einführung
-% Heinz Wittenbrink
-% 11. November 2017
+---
+title: DITA-Einführung
+author: Heinz Wittenbrink
+date: 2017-11-11
+rights: © 2007 Heinz Wittenbrink, CC BY-NC
+---
 
 ## Zielsetzung
 
@@ -48,13 +51,11 @@ Zitiert nach: [What is Minimalism? | Every Page is Page One](https://everypageis
 
 ---
 
-J.M. Carrol:
-
-> People are situated in a world more real to them than a series of steps, a world that provides rich context and convention for everything they do. People are always already trying things out, thinking things through, trying to relate what they already know to what is going on, recovering from errors. In a word, they are too busy learning to make much use of the instructions. This is the paradox of sense-making.
+> People are situated in a world more real to them than a series of steps, a world that provides rich context and convention for everything they do. People are always already trying things out, thinking things through, trying to relate what they already know to what is going on, recovering from errors. In a word, they are too busy learning to make much use of the instructions. This is the paradox of sense-making. (J.M.Carrol)
 
 [What is Minimalism? | Every Page is Page One](https://everypageispageone.com/2013/07/02/what-is-minimalism/ "What is Minimalism? | Every Page is Page One")
 
-## Vererbung
+---
 
 > In object-oriented programming, inheritance is a way to form new classes using classes that have already been defined. ...
 
@@ -166,6 +167,8 @@ Quelle: [DITA topics](https://docs.oasis-open.org/dita/v1.0/archspec/topicover.h
 - *Topic Manifest*: definiert die Topics in einer Publikation
 -  *Hierarchy Definition*: Reihenfolge, Bedeutung, Navigationswege
 -  *Link*-Beziehungen 
+
+---
 
 Siehe zu den Maps: [Purpose of ditamap files](https://www.oxygenxml.com/dita/styleguide/webhelp-feedback/Artefact/Maps/c_Working_with_Map_Files.html "Purpose of ditamap files")
 
@@ -335,9 +338,15 @@ Material: [History of DITA](http://dita.xml.org/book/export/html/1047 "History o
 )
 
 
-# Anwendungsmöglichkeiten
+# Anwendungen
 
 ## Component Based Content Management Systems
+
+> For the average CCM system, the content is created in smaller-than-page chunks, and assembled, much like a content mashup, to create a larger-sized page for output. A change is made to a component, which can be a single word, phrase, paragraph, or larger, which is then compiled, much like a software “build”, which generates a presentation version of the specified sources. The aggregated content can be pushed out to a Web page, a PDF, or a print destination.
+
+Rahel Bailie: [Component content management as content mash-ups](http://intentionaldesign.ca/2009/09/11/component-content-management-as-content-mashup/ "Component content management as content mash-ups | Intentional Design Inc.")
+
+---
 
 [DITA CMSes – DITA Writer](http://www.ditawriter.com/list-of-dita-capable-cmses/ "DITA CMSes – DITA Writer")
 
@@ -354,6 +363,17 @@ Material: [History of DITA](http://dita.xml.org/book/export/html/1047 "History o
 - DITA-basiertes CMS: [DITAToo DITA CCMS](http://intuillion.com/products/ditatoo/ "DITA Content Management | DITAToo DITA CCMS: Your Easy Entry to DITA")
 
 # Aktuell
+
+
+## Lightweight DITA
+
+> LwDITA will provide:
+
+> - A simplified schema for topics and maps, with fewer elements and tighter content models.
+> - Out of the box mappings and specifications for authoring topics without XML —for example, using HTML5 or Markdown.
+> - A simplified specialization architecture to define new topic types.
+
+[Lightweight DITA SC | OASIS](https://www.oasis-open.org/committees/tc_home.php?wg_abbrev=dita-lightweight-dita "Lightweight DITA SC | OASIS")
 
 ## Adobe DITA World
 
@@ -385,24 +405,17 @@ Material: [History of DITA](http://dita.xml.org/book/export/html/1047 "History o
 
 [Every Page is Page One](http://everypageispageone.com/ "Every Page is Page One")
 
-[Blog](https://www.learningdita.com/blog/ "Blog")
+[Learning DITA Blog](https://www.learningdita.com/blog/ "Blog")
 
 ## Editoren:
 
+[List of DITA Optimized Editors – DITA Writer](http://www.ditawriter.com/list-of-dita-optimized-editors/ "List of DITA Optimized Editors – DITA Writer")
 
-- Oxygen
-
+- [Oxygen XML Editor](https://www.oxygenxml.com/ "XML Editor")
 - [Xeditor, a CMS editor for XML content | I'd Rather Be Writing](http://idratherbewriting.com/2016/03/30/xeditor-xml-editor-for-your-cms-or-ccms/ "Xeditor, a CMS editor for XML content | I'd Rather Be Writing")
-
 - Freie Personal Edition: [XMLmind XML Editor: XMLmind DITA Editor](http://www.xmlmind.com/xmleditor/dita_editor.html "XMLmind XML Editor: XMLmind DITA Editor")
 
 ## Texte
-
-[10 reasons for moving away from DITA | I'd Rather Be Writing](http://idratherbewriting.com/2015/01/28/10-reasons-for-moving-away-from-dita/ "10 reasons for moving away from DITA | I'd Rather Be Writing")
-
-
-
-/Applications/Aquamacs.app/Contents/Resources/etc/schema/xhtml.rnc
 
 [Step by step process to create new DITA project - Oxygen XML Forum](https://www.oxygenxml.com/forum/topic6637.html "Step by step process to create new DITA project - Oxygen XML Forum")
 
@@ -411,16 +424,17 @@ Material: [History of DITA](http://dita.xml.org/book/export/html/1047 "History o
 
 [Reusing DITA Content](https://www.oxygenxml.com/doc/versions/19.0/ug-editor/topics/eppo-pathfinder-reuse.html "Reusing DITA Content")
 
+[10 reasons for moving away from DITA | I'd Rather Be Writing](http://idratherbewriting.com/2015/01/28/10-reasons-for-moving-away-from-dita/ "10 reasons for moving away from DITA | I'd Rather Be Writing")
+
 ## Tools
 
 - [XMLmind DITA Converter](http://www.xmlmind.com/ditac/what_is_ditac.html "XMLmind DITA Converter: XMLmind DITA Converter")
 
 - [DITA Open Toolkit](http://www.dita-ot.org/ "DITA Open Toolkit")
 
-## Meine DITA Links
+## Sammlung von DITA Links (Heinz Wittenbrink)
 
 [Pinboard: bookmarks for heinzwittenbrink tagged 'dita'](https://www.pinboard.in/u:heinzwittenbrink/t:DITA/ "Pinboard: bookmarks for heinzwittenbrink tagged 'dita'")
-
 
 # DITA Open Toolkit
 
@@ -459,7 +473,7 @@ M00087-3:samples heinz$ dita --input=sequence.ditamap --format=html5 --output=ou
      [xslt] Warning at xsl:stylesheet on line 12 column 59 of map2html5Impl.xsl:
      [xslt]   Stylesheet module plugin:org.dita.html5:xsl/map2html5Impl.xsl is included or imported more
      [xslt]   than once. This is permitted, but may lead to errors or unexpected behavior
- ```
+```
 
 ## Input
 
@@ -493,4 +507,26 @@ M00087-3:samples heinz$ dita --input=sequence.ditamap --format=html5 --output=ou
 </map>
 ```
 
+# Exkurs:  Output-Erzeugung mit XSL-FO
 
+## Apache FOP
+
+[Apache(tm) FOP: Quick Start Guide](https://xmlgraphics.apache.org/fop/quickstartguide.html "Apache(tm) FOP: Quick Start Guide")
+
+---
+
+![XSL-FO-Processing](https://upload.wikimedia.org/wikipedia/commons/5/58/XSL-FO.png "File:XSL-FO.png - Wikimedia Commons")
+
+<small style="font-size:x-small">Quelle: [File:XSL-FO.png - Wikimedia Commons](https://commons.wikimedia.org/wiki/File:XSL-FO.png "File:XSL-FO.png - Wikimedia Commons")</small>
+
+[![License: ODbL](https://img.shields.io/badge/License-PDDL-brightgreen.svg)](https://opendatacommons.org/licenses/pddl/)
+
+## Vielen Dank!
+
+---
+
+[\@heinz](https://twitter.com/heinz?lang=de "Heinz Wittenbrink (@heinz) | Twitter")
+
+heinz at fh-joanneum dot at
+
+[![License: CC BY-SA 4.0](https://img.shields.io/badge/License-CC%20BY--SA%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by-sa/4.0/)
