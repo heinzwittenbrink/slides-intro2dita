@@ -337,6 +337,46 @@ Material: [History of DITA](http://dita.xml.org/book/export/html/1047 "History o
 17.12.2015: DITA 1.3 (Troubleshooting-Topic, Scoped Keys, MathML und Equation-Domains, Relax NG für normative Schemas
 )
 
+# Authoring mit Adobe Framemaker
+
+
+## Video Framemaker Basics
+
+[![](pics/framemaker_basics.png){ width=60% }](https://www.youtube.com/watch?v=FwqC8gbH_Xc)
+
+## Wichtig zum Editieren mit XML
+
+- Workspaces
+- Elementgrenzen
+- Strukturansicht
+- Element-Katalog
+- Pods
+
+
+## Erstellen eines Topics vom Typ "Concept"
+
+[![](pics/create_concept_framemaker.png){ width=60% }](https://www.youtube.com/watch?v=SWQ9FVUiLWI)
+
+## Editieren eines Topics vom Typ "Concept"
+
+[![](pics/concept_framemaker.png){ width=60% }](https://www.youtube.com/watch?v=9iKQ2WX6CnY)
+
+
+## Editieren des Prologs und der Metadateneines Topic
+
+[![](pics/framemaker_prologue.png){ width=60% }](https://www.youtube.com/watch?v=B8VeGvhPoA0)
+
+## Wichtige weitere Punkte
+
+- Attributansicht durch Klicken rechts bei Element
+- Attribut-Pad durch Doppelklicken
+- Requires attributes
+- Metadaten zur Audience
+- Keywords
+
+## Erstellen eines Topics vom Typ "Task"
+
+[![](pics/task_framemaker.png){ width=60% }](https://www.youtube.com/watch?v=gZih-jZT8-Y)
 
 # Anwendungen
 
