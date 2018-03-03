@@ -1,7 +1,7 @@
 ---
 title: DITA-Einführung
 author: Heinz Wittenbrink
-date: 2017-11-11
+date: 2018-03-03
 rights: © 2007 Heinz Wittenbrink, CC BY-NC
 ---
 
@@ -353,13 +353,15 @@ Material: [History of DITA](http://dita.xml.org/book/export/html/1047 "History o
 - Pods
 
 
+## Editieren eines Topics vom Typ "Concept"
+
+[![](pics/concept_framemaker.png){ width=60% }](https://www.youtube.com/watch?v=9iKQ2WX6CnY)
+
 ## Erstellen eines Topics vom Typ "Concept"
 
 [![](pics/create_concept_framemaker.png){ width=60% }](https://www.youtube.com/watch?v=SWQ9FVUiLWI)
 
-## Editieren eines Topics vom Typ "Concept"
 
-[![](pics/concept_framemaker.png){ width=60% }](https://www.youtube.com/watch?v=9iKQ2WX6CnY)
 
 
 ## Editieren des Prologs und der Metadateneines Topic
