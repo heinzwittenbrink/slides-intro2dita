@@ -2,14 +2,18 @@
 title: DITA-Einführung
 author: Heinz Wittenbrink
 date: 2018-03-03
-rights: © 2007 Heinz Wittenbrink, CC BY-NC
+rights: © 2017 Heinz Wittenbrink, CC BY-NC
 ---
 
 ## Zielsetzung
 
 - Grundwissen über DITA
 - Vergleich mit HTML
-- Überlegungen zu Online-Sessions
+- Überlegungen zu DITA in der Content-Strategie
+
+## Weitere Präsentationen zu DITA
+
+[Bedingtes Publizieren mit DITA](conditional_publishing.html)
 
 # DITA-Basics
 
@@ -100,17 +104,6 @@ Zitiert nach: [What is Minimalism? | Every Page is Page One](https://everypageis
 </source>
 ```
 
-## .ditaval file sample (for conditionalizing text) 
-
-```xml
-<source lang="xml">
-<?xml version="1.0" encoding="UTF-8"?>
-<val>
-  <prop att="audience" val="foo" action="include" />
-  <prop att="audience" val="bar" action="exclude" />
-</val>
-</source>
-```
 ## Example of conditionalized text:*
 
 ```xml
@@ -154,6 +147,13 @@ Quelle: [DITA topics](https://docs.oasis-open.org/dita/v1.0/archspec/topicover.h
 - [Topic content](https://docs.oasis-open.org/dita/v1.0/archspec/topiccontent.html "Topic content")
 
 - [Topic modules](https://docs.oasis-open.org/dita/v1.0/archspec/topicmodules.html "Topic modules")
+
+# Publizieren
+
+## ![](pics/dita-ot_output.png)
+
+Quelle: [DITA Open Toolkit](https://www.dita-ot.org/)
+
 
 ## Maps
 
@@ -209,6 +209,8 @@ Die Maps bestehen vor allem aus topicref-elementen. Diese gehören zur hierarchy
 </map>
 ```
 Quelle: [DITA for the Impatient](http://www.xmlmind.com/tutorials/DITA/ "DITA for the Impatient")
+
+
 
 ## Publications and Collections
 
@@ -314,7 +316,9 @@ References:  [Publication and collection defined](https://www.oxygenxml.com/dita
 
 Tutorial: [DITA Configuration and Specialization Tutorials](http://www.xiruss.org/tutorials/dita-specialization/ "DITA Configuration and Specialization Tutorials")
 
-## Geschichte
+# Geschichte
+
+##
 
 März 2001: IBM stellt Kern-DTD und XML-Schema fertig
 
@@ -324,7 +328,7 @@ Mai 2002: Zur Topic-Spezialisierung kommt die Domain-Spezialisierung
 
 Februar 2005: IBM übergibt das DITA Open Toolkit an Sourceforge
 
----
+##
 
 Juni 2005: DITA 1.0
 
@@ -435,6 +439,13 @@ Rahel Bailie: [Component content management as content mash-ups](http://intentio
 [data2type GmbH: XML-Technologien | DITA](https://www.data2type.de/xml-xslt-xslfo/dita/ "data2type GmbH: XML-Technologien | DITA")
 
 [DITA lernen](https://www.learningdita.de/ "DITA lernen")
+
+
+## Beispieldokumente
+
+[gnostyx/dita-demo-content-collection: DITA Demonstration Content Collection](https://github.com/gnostyx/dita-demo-content-collection)
+
+Siehe dazu: [ThunderBird: A Sample DITA Documentation Set to Play With – DITA Writer](http://www.ditawriter.com/thunderbird-a-sample-dita-documentation-set-to-play-with/)
 
 
 ## Videos
