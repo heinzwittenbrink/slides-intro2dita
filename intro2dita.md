@@ -12,25 +12,26 @@ rights: © 2017 Heinz Wittenbrink, CC BY-NC
 
 ##
 
-> - Darwin
-> - Information
-> - Typing
-> - Architecture
+> - **D** arwin: Evolutionäre Weiterentwicklung
+> - **I** nformation: Praktisch und mehrfach nutzbare Inhalte
+> - **T** yping: Concept, Task, Reference als Grundtypen
+> - **A** rchitecture: Komponenten für Wiederverwendung und Publikationen
+
+<p class="rights">Orientiert an: [Sarah O'Keefe, DITA 101 webcast](https://www.youtube.com/watch?v=ngHIIWbEp_Q)</p>
 
 ## Zielsetzung
 
 - Grundwissen über DITA
-- Vergleich mit HTML
+- Kenntnis von Anwendungsfällen und Business Cases
 - Überlegungen zu DITA in der Content-Strategie
 
-##
+## Sehr gute Einführung
 
-- URL dieser Präsentation: <https://heinzwittenbrink.github.io/slides-intro2dita/>
-- Präsentation auf Github: <https://github.com/heinzwittenbrink/slides-intro2dita>
+Sarah O'Keefe:
 
-## Weitere Präsentationen zu DITA
+[DITA 101 - YouTube](https://www.youtube.com/watch?v=tBRyBYWGCqI)
 
-[Bedingtes Publizieren mit DITA](conditional_publishing.html)
+[DITA 101](https://de.slideshare.net/Scriptorium/dita-101)
 
 # DITA-Basics
 
@@ -67,14 +68,20 @@ Nach JoAnn Hackos
 > - Principle 3: Support error recognition and recovery
 > - Principle 4: Support reading to do, study, and locate
 
-Zitiert nach: [What is Minimalism? | Every Page is Page One](https://everypageispageone.com/2013/07/02/what-is-minimalism/ "What is Minimalism? | Every Page is Page One")
+<p class="rights">Zitiert nach: [What is Minimalism? | Every Page is Page One](https://everypageispageone.com/2013/07/02/what-is-minimalism/ "What is Minimalism? | Every Page is Page One")</p>
 
 
 ---
 
 > People are situated in a world more real to them than a series of steps, a world that provides rich context and convention for everything they do. People are always already trying things out, thinking things through, trying to relate what they already know to what is going on, recovering from errors. In a word, they are too busy learning to make much use of the instructions. This is the paradox of sense-making. (J.M.Carrol)
 
-[What is Minimalism? | Every Page is Page One](https://everypageispageone.com/2013/07/02/what-is-minimalism/ "What is Minimalism? | Every Page is Page One")
+<p class="rights">[What is Minimalism? | Every Page is Page One](https://everypageispageone.com/2013/07/02/what-is-minimalism/ "What is Minimalism? | Every Page is Page One")</p>
+
+## Vererbung
+
+![](https://upload.wikimedia.org/wikipedia/commons/thumb/d/d8/InheritancePgmExample.svg/1600px-InheritancePgmExample.svg.png){width=60%}
+
+<p class="rights">Quelle: [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:InheritancePgmExample.svg), Urheber: [User:Cactus26](https://commons.wikimedia.org/wiki/User:Cactus26), [![](https://helpx.adobe.com/etc/designs/help/images/CC.png)](https://creativecommons.org/licenses/by-nc-sa/3.0/)</p>
 
 ---
 
@@ -82,13 +89,13 @@ Zitiert nach: [What is Minimalism? | Every Page is Page One](https://everypageis
 
 > In DITA, child topics or elements inherit attributes from their parents. For example, metadata applied to a section of a DITA file will automatically be applied to topics contained in the section.
 
-[Inheritance](http://dita-ot.sourceforge.net/doc/ot-userguide/xhtml/core_vocabulary/inheritance.html "Inheritance")
+<p class="rights">[Inheritance](http://dita-ot.sourceforge.net/doc/ot-userguide/xhtml/core_vocabulary/inheritance.html "Inheritance")</p>
 
 ---
 
 > Inheritance also plays an important role in DITA specialization, which allows you to extend a base topic to match your specific requirements by defining only the differences between it and its base topic; the bulk of the specialized definition is inherited.
 
-[Inheritance](http://dita-ot.sourceforge.net/doc/ot-userguide/xhtml/core_vocabulary/inheritance.html "Inheritance")
+<p class="rights">[Inheritance](http://dita-ot.sourceforge.net/doc/ot-userguide/xhtml/core_vocabulary/inheritance.html "Inheritance")</p>
 
 ## DITA-Basics in Code-Beispielen
 
@@ -97,19 +104,16 @@ Zitiert nach: [What is Minimalism? | Every Page is Page One](https://everypageis
 ## Ditamap file (table of contents) sample
 
 ```xml
-<source lang="xml">
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN" "map.dtd">
 <map id="map" xml:lang="en">
   <topicref format="dita" href="sample.dita" navtitle="Sample" type="topic"/>
 </map>
-</source>
 ```
 
 ## Hello World (topic DTD)
 
 ```xml
-<source lang="xml">
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
 <topic xml:lang="en" id="sample">
@@ -118,13 +122,16 @@ Zitiert nach: [What is Minimalism? | Every Page is Page One](https://everypageis
   <p audience="foo">Hello World!</p>
   </body>
 </topic>
-</source>
 ```
+
+---
+
+- Topics haben eine `id`.
+- Die `audience` kann insgesamt oder bei einzelnen Elementen festgelegt werden.
 
 ## Example of conditionalized text:*
 
 ```xml
-<source lang="xml">
 <?xml version="1.0" encoding="UTF-8"?>
 <p audience="foo">
 This is an information useful for the foo audience!
@@ -132,7 +139,6 @@ This is an information useful for the foo audience!
 <p audience="bar">
 This is an information useful for the bar audience.
 </p>
-</source>
 ```
 ## Topics
 
@@ -151,11 +157,25 @@ Quelle: [DITA topics](https://docs.oasis-open.org/dita/v1.0/archspec/topicover.h
 
 ## Grundlegende Topic-Typen
 
+---
+
 - *Concepts*: DITA concept topics answer "What is..." questions. They include a body-level element with a basic topic structure, including sections and examples.
+
+<p class="rights">Quelle: [DITA topics](https://docs.oasis-open.org/dita/v1.0/archspec/topicover.html "DITA topics")</p>
+
+
+---
+
 - *Tasks*: Task topics answer "How do I?" questions, and have a well-defined structure that describes how to complete a procedure to accomplish a specific goal.
+
+<p class="rights">Quelle: [DITA topics](https://docs.oasis-open.org/dita/v1.0/archspec/topicover.html "DITA topics")</p>
+
+
+---
+
 - *Reference*: Reference topics describe regular features of a subject or product, such as commands in a programming language.
 
-Quelle: [DITA topics](https://docs.oasis-open.org/dita/v1.0/archspec/topicover.html "DITA topics")
+<p class="rights">Quelle: [DITA topics](https://docs.oasis-open.org/dita/v1.0/archspec/topicover.html "DITA topics")</p>
 
 ## Struktur, Content, Module
 
@@ -229,10 +249,26 @@ Quelle: [DITA for the Impatient](http://www.xmlmind.com/tutorials/DITA/ "DITA fo
 
 
 
-## Publications and Collections
+## Publications, Collections, Publishing
 
+## Beispiele für Publikationen
 
-References:  [Publication and collection defined](https://www.oxygenxml.com/dita/styleguide/webhelp-feedback/Artefact/Maps/c_Publication_Defined.html "Publication and collection defined")
+> - Dokument
+> - Website
+> - E-book
+> - Help-System
+
+## Collections
+
+> The term collection is used to describe a potential publication in the DITA source. A ditamap collection is processed to become a publication. In other words, collection describes the source content, while publication describes the output format. A collection is defined in DITA through a ditamap, or multiple embedded ditamaps.
+
+<p class="rights">[Publication and collection defined](https://www.oxygenxml.com/dita/styleguide/webhelp-feedback/Artefact/Maps/c_Publication_Defined.html "Publication and collection defined")</p>
+
+## Publishing
+
+> The process of transforming DITA source into an output format is known as publishing, processing, or transformation, and the software tools for the process are known as processors, transformers, or publishing engines.
+
+<p class="rights">[Publication and collection defined](https://www.oxygenxml.com/dita/styleguide/webhelp-feedback/Artefact/Maps/c_Publication_Defined.html "Publication and collection defined")</p>
 
 ## Zentralisiertes Management von Variablen
 
@@ -341,7 +377,7 @@ März 2001: IBM stellt Kern-DTD und XML-Schema fertig
 
 Mai 2002: Zur Topic-Spezialisierung kommt die Domain-Spezialisierung
 
-2004 OASIS Technical Commitee
+2004 [OASIS](https://www.oasis-open.org/) Technical Commitee
 
 Februar 2005: IBM übergibt das DITA Open Toolkit an Sourceforge
 
@@ -353,10 +389,11 @@ August 2007: DITA 1.1 (neue Bookmap-Spezialisierung)
 
 2010: DITA 1.2 (Lernobjekte)
 
-Material: [History of DITA](http://dita.xml.org/book/export/html/1047 "History of DITA")
+17.12.2015: DITA 1.3 (Troubleshooting-Topic, Scoped Keys, MathML und Equation-Domains, Relax NG für normative Schemas)
 
-17.12.2015: DITA 1.3 (Troubleshooting-Topic, Scoped Keys, MathML und Equation-Domains, Relax NG für normative Schemas
-)
+Material: [History of DITA | DITA XML.org](http://dita-archive.xml.org/book/history-of-dita)
+
+
 
 # Authoring mit Adobe Framemaker
 
@@ -385,7 +422,7 @@ Material: [History of DITA](http://dita.xml.org/book/export/html/1047 "History o
 
 
 
-## Editieren des Prologs und der Metadateneines Topic
+## Editieren des Prologs und der Metadaten eines Topic
 
 [![](pics/framemaker_prologue.png){ width=60% }](https://www.youtube.com/watch?v=B8VeGvhPoA0)
 
@@ -402,6 +439,34 @@ Material: [History of DITA](http://dita.xml.org/book/export/html/1047 "History o
 [![](pics/task_framemaker.png){ width=60% }](https://www.youtube.com/watch?v=gZih-jZT8-Y)
 
 # Anwendungen
+
+## Optimale Umgebung für DITA
+
+- Topic-basierte, modulare Inhalte
+- Wiederverwendung
+- Austausch von Inhalten
+- Übersetzung und Lokalisierung
+
+<p class="rights">Sarah O'Keefe: [DITA 101 - YouTube](https://www.youtube.com/watch?v=tBRyBYWGCqI)</p>
+
+## Wichtigste Business Cases
+
+- Lokalisierung
+- Wiederverwendung von Inhalten
+
+<p class="rights">Sarah O'Keefe: [DITA 101 - YouTube](https://www.youtube.com/watch?v=tBRyBYWGCqI)</p>
+
+## Herausforderungen für Autoren
+
+- Topic-orientiertes Schreiben
+- Orientierung an wiederverwendbaren Inhalten
+- Verständnis für technische Hintergründe
+
+## Herausforderung für die Organisation
+
+- Technische Komplexität
+- XML-Knowhow in der Organisation
+- Realisisierung der Potenziale der Inhalte-Wiederverwendung
 
 ## Component Based Content Management Systems
 
@@ -452,6 +517,8 @@ Rahel Bailie: [Component content management as content mash-ups](http://intentio
 [DITA XML.org | Online community for the Darwin Information Typing Architecture OASIS Standard](http://dita.xml.org/ "DITA XML.org | Online community for the Darwin Information Typing Architecture OASIS Standard")
 
 ## Einführungen
+
+[DITA 101 webcast - YouTube](https://www.youtube.com/watch?v=ngHIIWbEp_Q)
 
 [data2type GmbH: XML-Technologien | DITA](https://www.data2type.de/xml-xslt-xslfo/dita/ "data2type GmbH: XML-Technologien | DITA")
 
@@ -590,6 +657,15 @@ M00087-3:samples heinz$ dita --input=sequence.ditamap --format=html5 --output=ou
 <small style="font-size:x-small">Quelle: [File:XSL-FO.png - Wikimedia Commons](https://commons.wikimedia.org/wiki/File:XSL-FO.png "File:XSL-FO.png - Wikimedia Commons")</small>
 
 [![License: ODbL](https://img.shields.io/badge/License-PDDL-brightgreen.svg)](https://opendatacommons.org/licenses/pddl/)
+
+---
+
+- URL dieser Präsentation: <https://heinzwittenbrink.github.io/slides-intro2dita/>
+- Präsentation auf Github: <https://github.com/heinzwittenbrink/slides-intro2dita>
+
+## Weitere Präsentationen zu DITA
+
+[Bedingtes Publizieren mit DITA](conditional_publishing.html)
 
 ## Vielen Dank!
 
