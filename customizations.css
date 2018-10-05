@@ -1,0 +1,14 @@
+/**********************************************
+* Customization Heinz Wittenbrink
+/ **********************************************/
+
+p.rights { font-size: small;
+  color:gray;
+  position: fixed;
+  bottom: 3em;
+  right: 0em;
+  transform: rotate(90deg);
+	transform-origin: right bottom 0;
+}
+
+p.rights a {color: gray;}

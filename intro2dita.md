@@ -1,15 +1,32 @@
 ---
 title: DITA-Einführung
 author: Heinz Wittenbrink
-date: 2018-03-03
+date: 2018-10-06
 rights: © 2017 Heinz Wittenbrink, CC BY-NC
 ---
+
+
+##{data-background="https://www.dita-ot.org/images/dita-logo.png" data-background-size="contain"}
+
+<p class="rights">Bild: <https://www.dita-ot.org/> </p>
+
+##
+
+> - Darwin
+> - Information
+> - Typing
+> - Architecture
 
 ## Zielsetzung
 
 - Grundwissen über DITA
 - Vergleich mit HTML
 - Überlegungen zu DITA in der Content-Strategie
+
+##
+
+- URL dieser Präsentation: <https://heinzwittenbrink.github.io/slides-intro2dita/>
+- Präsentation auf Github: <https://github.com/heinzwittenbrink/slides-intro2dita>
 
 ## Weitere Präsentationen zu DITA
 
@@ -67,7 +84,7 @@ Zitiert nach: [What is Minimalism? | Every Page is Page One](https://everypageis
 
 [Inheritance](http://dita-ot.sourceforge.net/doc/ot-userguide/xhtml/core_vocabulary/inheritance.html "Inheritance")
 
---- 
+---
 
 > Inheritance also plays an important role in DITA specialization, which allows you to extend a base topic to match your specific requirements by defining only the differences between it and its base topic; the bulk of the specialized definition is inherited.
 
@@ -77,7 +94,7 @@ Zitiert nach: [What is Minimalism? | Every Page is Page One](https://everypageis
 
 (Quelle: [Darwin Information Typing Architecture - Wikipedia](https://en.wikipedia.org/wiki/Darwin_Information_Typing_Architecture "Darwin Information Typing Architecture - Wikipedia")
 
-## Ditamap file (table of contents) sample 
+## Ditamap file (table of contents) sample
 
 ```xml
 <source lang="xml">
@@ -108,12 +125,12 @@ Zitiert nach: [What is Minimalism? | Every Page is Page One](https://everypageis
 
 ```xml
 <source lang="xml">
-<?xml version="1.0" encoding="UTF-8"?> 
+<?xml version="1.0" encoding="UTF-8"?>
 <p audience="foo">
-This is an information useful for the foo audience! 
+This is an information useful for the foo audience!
 </p>
 <p audience="bar">
-This is an information useful for the bar audience. 
+This is an information useful for the bar audience.
 </p>
 </source>
 ```
@@ -126,7 +143,7 @@ This is an information useful for the bar audience.
 
 > Topics are the basis for high-quality information. They should be short enough to be easily readable, but long enough to make sense on their own.
 
---- 
+---
 
 > Information typing is the practice of identifying types of topics that contain distinct kinds information, such as concepts, tasks, and reference information. Topics that answer different kinds of questions can be categorized as different information types. The base topic types provided by DITA ( a generic topic, plus concept, task, and reference ) provide a usable starter set that can be adopted for immediate authoring.
 
@@ -166,7 +183,7 @@ Quelle: [DITA Open Toolkit](https://www.dita-ot.org/)
 ## Teile von Maps
 - *Topic Manifest*: definiert die Topics in einer Publikation
 -  *Hierarchy Definition*: Reihenfolge, Bedeutung, Navigationswege
--  *Link*-Beziehungen 
+-  *Link*-Beziehungen
 
 ---
 
@@ -217,7 +234,7 @@ Quelle: [DITA for the Impatient](http://www.xmlmind.com/tutorials/DITA/ "DITA fo
 
 References:  [Publication and collection defined](https://www.oxygenxml.com/dita/styleguide/webhelp-feedback/Artefact/Maps/c_Publication_Defined.html "Publication and collection defined")
 
-## Zentralisiertes Management von Variablen 
+## Zentralisiertes Management von Variablen
 
 **Beispiel:**
 
@@ -522,7 +539,7 @@ M00087-3:~ heinz$
 ## Erster Test
 
 ```shell
-M00087-3:samples heinz$ dita --input=sequence.ditamap --format=html5 --output=output/sequence 
+M00087-3:samples heinz$ dita --input=sequence.ditamap --format=html5 --output=output/sequence
      [xslt] Warning at xsl:stylesheet on line 12 column 59 of map2html5Impl.xsl:
      [xslt]   Stylesheet module plugin:org.dita.html5:xsl/map2html5Impl.xsl is included or imported more
      [xslt]   than once. This is permitted, but may lead to errors or unexpected behavior
@@ -534,8 +551,8 @@ M00087-3:samples heinz$ dita --input=sequence.ditamap --format=html5 --output=ou
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN"
  "../dtd/technicalContent/dtd/map.dtd">
-<!-- This file is part of the DITA Open Toolkit project hosted on 
-     Sourceforge.net. See the accompanying license.txt file for 
+<!-- This file is part of the DITA Open Toolkit project hosted on
+     Sourceforge.net. See the accompanying license.txt file for
      applicable licenses.-->
 <!-- (C) Copyright IBM Corporation 2001, 2005. All Rights Reserved.
  *-->
