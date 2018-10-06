@@ -2,15 +2,12 @@
 title: DITA-Einführung
 author: Heinz Wittenbrink
 date: 2018-10-06
-rights: © 2017 Heinz Wittenbrink, CC BY-NC
 ---
-
-
 ##{data-background="https://www.dita-ot.org/images/dita-logo.png" data-background-size="contain"}
 
 <p class="rights">Bild: <https://www.dita-ot.org/> </p>
 
-##
+---
 
 > - **D** arwin: Evolutionäre Weiterentwicklung
 > - **I** nformation: Praktisch und mehrfach nutzbare Inhalte
@@ -205,7 +202,7 @@ This is an information useful for the bar audience.
 
 - Struktur von Topics in der DITA-Dokumentation: [Topic structure](https://www.oxygenxml.com/dita/1.3/specs/archSpec/base/topicstructure.html)
 
-- Inhalte eine Topic in der DITA-Dokumentation: [Topic content](https://www.oxygenxml.com/dita/1.3/specs/archSpec/base/topiccontent.html)
+- Inhalte eines Topic in der DITA-Dokumentation: [Topic content](https://www.oxygenxml.com/dita/1.3/specs/archSpec/base/topiccontent.html)
 
 
 # Publizieren
@@ -395,7 +392,7 @@ Beispiele: [Working with Variable Text in DITA](https://www.oxygenxml.com/doc/ve
 
 -->
 
-## Anpassung/Spezialisierung
+## Spezialisierung
 
 > Specialization allows you to define new kinds of information (new structural types or new domains of information), while reusing as much of existing design and code as possible, and minimizing or eliminating the costs of interchange, migration, and maintenance.
 
@@ -506,9 +503,11 @@ Material: [History of DITA | DITA XML.org](http://dita-archive.xml.org/book/hist
 
 ## Component Based Content Management Systems
 
+---
+
 > For the average CCM system, the content is created in smaller-than-page chunks, and assembled, much like a content mashup, to create a larger-sized page for output. A change is made to a component, which can be a single word, phrase, paragraph, or larger, which is then compiled, much like a software “build”, which generates a presentation version of the specified sources. The aggregated content can be pushed out to a Web page, a PDF, or a print destination.
 
-Rahel Bailie: [Component content management as content mash-ups](http://intentionaldesign.ca/2009/09/11/component-content-management-as-content-mashup/ "Component content management as content mash-ups | Intentional Design Inc.")
+<p class="rights">Rahel Bailie: [Component content management as content mash-ups](http://intentionaldesign.ca/2009/09/11/component-content-management-as-content-mashup/ "Component content management as content mash-ups | Intentional Design Inc.")</p>
 
 ---
 
@@ -537,11 +536,11 @@ Rahel Bailie: [Component content management as content mash-ups](http://intentio
 > - Out of the box mappings and specifications for authoring topics without XML —for example, using HTML5 or Markdown.
 > - A simplified specialization architecture to define new topic types.
 
-[Lightweight DITA SC | OASIS](https://www.oasis-open.org/committees/tc_home.php?wg_abbrev=dita-lightweight-dita "Lightweight DITA SC | OASIS")
+<p class="rights">[Lightweight DITA SC | OASIS](https://www.oasis-open.org/committees/tc_home.php?wg_abbrev=dita-lightweight-dita "Lightweight DITA SC | OASIS")</p>
 
 ## Adobe DITA World
 
-[Program - Adobe DITA World 2017 – The DITA Online Conference | Adobe Events](https://2017-adobe-dita-world.meetus.adobeevents.com/program "Program - Adobe DITA World 2017 – The DITA Online Conference | Adobe Events")
+[Adobe DITA World 2018 – Home](https://2018-adobe-dita-world.meetus.adobeevents.com/)
 
 
 # Material
@@ -561,9 +560,9 @@ Rahel Bailie: [Component content management as content mash-ups](http://intentio
 [DITA lernen](https://www.learningdita.de/ "DITA lernen")
 
 
-## Beispieldokumente
+## Code-Beispiele
 
-[gnostyx/dita-demo-content-collection: DITA Demonstration Content Collection](https://github.com/gnostyx/dita-demo-content-collection)
+["Gnostyx" - DITA Demonstration Content Collection](https://github.com/gnostyx/dita-demo-content-collection)
 
 Siehe dazu: [ThunderBird: A Sample DITA Documentation Set to Play With – DITA Writer](http://www.ditawriter.com/thunderbird-a-sample-dita-documentation-set-to-play-with/)
 
