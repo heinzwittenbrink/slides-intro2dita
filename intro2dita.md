@@ -51,7 +51,28 @@ Sarah O'Keefe:
 
 - neue Zusammenstellungen von Inhalten einführen, die neue Inhaltstypen erfordern (z.B. Hardware Dokumentation, Geschäftsprozesse usw.)
 
-([dita-demo-content-collection/README.md at dita-1.3 · dita-community/dita-demo-content-collection](https://github.com/dita-community/dita-demo-content-collection/blob/dita-1.3/README.md "dita-demo-content-collection/README.md at dita-1.3 · dita-community/dita-demo-content-collection"))
+<p class="rights">[Gnostyx DITA Demonstration Documents](https://github.com/dita-community/dita-demo-content-collection/tree/dita-1.3)</p>
+
+## Wie funktioniert DITA?
+
+
+##{data-background="https://help.adobe.com/en_US/framemaker/2017/using/assets/dita_fm.png" data-background-size="contain"}
+
+<p class="rights">Bild: [Adobe Systems](https://help.adobe.com/en_US/framemaker/2017/using/index.html#t=using-framemaker-2017%2Ffrm_structauthdita_sd%2FDITA_maps-.htm) [![Creative Commons — Attribution-NonCommercial-ShareAlike 3.0 Unported — CC BY-NC-SA 3.0](https://helpx.adobe.com/etc/designs/help/images/CC.png)](https://creativecommons.org/licenses/by-nc-sa/3.0/)</p>
+
+<aside class="notes">
+
+Die Hilfe zu Adobe Framemaker ist generell eine gute Einführung in DITA https://help.adobe.com/en_US/framemaker/2017/using/index.html
+
+</aside>
+
+## DITA Use Cases
+
+[Freescale Semiconductor Inc](https://www.oxygenxml.com/case_study_Freescale_Semiconductor.html)
+
+[Esko](https://componize.com/assessment-6-years-using-dita-esko/) ([Infografik](https://pbs.twimg.com/media/C6U9A4YXEAER9Pl.jpg:large))
+
+[Skyward Case Study](http://go.easydita.com/skyward-case-study)
 
 ## Design-Prinzipien
 
@@ -73,7 +94,7 @@ Nach JoAnn Hackos
 
 ---
 
-> People are situated in a world more real to them than a series of steps, a world that provides rich context and convention for everything they do. People are always already trying things out, thinking things through, trying to relate what they already know to what is going on, recovering from errors. In a word, they are too busy learning to make much use of the instructions. This is the paradox of sense-making. (J.M.Carrol)
+> People are situated in a world more real to them than a series of steps, a world that provides rich context and convention for everything they do. People are always already trying things out, thinking things through, trying to relate what they already know to what is going on, recovering from errors. In a word, they are too busy learning to make much use of the instructions. (J.M.Carrol)
 
 <p class="rights">[What is Minimalism? | Every Page is Page One](https://everypageispageone.com/2013/07/02/what-is-minimalism/ "What is Minimalism? | Every Page is Page One")</p>
 
@@ -144,16 +165,19 @@ This is an information useful for the bar audience.
 
 > A topic is a unit of information with a title and content, short enough to be specific to a single subject or answer a single question, but long enough to make sense on its own and be authored as a unit.
 
+<p class="rights">Quelle: [DITA topics](https://docs.oasis-open.org/dita/v1.0/archspec/topicover.html "DITA topics")</p>
 
 ---
 
 > Topics are the basis for high-quality information. They should be short enough to be easily readable, but long enough to make sense on their own.
 
+<p class="rights">Quelle: [DITA topics](https://docs.oasis-open.org/dita/v1.0/archspec/topicover.html "DITA topics")</p>
+
 ---
 
 > Information typing is the practice of identifying types of topics that contain distinct kinds information, such as concepts, tasks, and reference information. Topics that answer different kinds of questions can be categorized as different information types. The base topic types provided by DITA ( a generic topic, plus concept, task, and reference ) provide a usable starter set that can be adopted for immediate authoring.
 
-Quelle: [DITA topics](https://docs.oasis-open.org/dita/v1.0/archspec/topicover.html "DITA topics")
+<p class="rights">Quelle: [DITA topics](https://docs.oasis-open.org/dita/v1.0/archspec/topicover.html "DITA topics")</p>
 
 ## Grundlegende Topic-Typen
 
@@ -179,17 +203,16 @@ Quelle: [DITA topics](https://docs.oasis-open.org/dita/v1.0/archspec/topicover.h
 
 ## Struktur, Content, Module
 
-- [Topic structure](https://docs.oasis-open.org/dita/v1.0/archspec/dita_spec_22_topics_structure.html "Topic structure")
+- Struktur von Topics in der DITA-Dokumentation: [Topic structure](https://www.oxygenxml.com/dita/1.3/specs/archSpec/base/topicstructure.html)
 
-- [Topic content](https://docs.oasis-open.org/dita/v1.0/archspec/topiccontent.html "Topic content")
+- Inhalte eine Topic in der DITA-Dokumentation: [Topic content](https://www.oxygenxml.com/dita/1.3/specs/archSpec/base/topiccontent.html)
 
-- [Topic modules](https://docs.oasis-open.org/dita/v1.0/archspec/topicmodules.html "Topic modules")
 
 # Publizieren
 
-## ![](pics/dita-ot_output.png)
+##{data-background="pics/dita-ot_output.png" data-background-size="contain"}
 
-Quelle: [DITA Open Toolkit](https://www.dita-ot.org/)
+<p class="rights">Quelle: [DITA Open Toolkit](https://www.dita-ot.org/)</p>
 
 
 ## Maps
@@ -209,7 +232,7 @@ Quelle: [DITA Open Toolkit](https://www.dita-ot.org/)
 
 Siehe zu den Maps: [Purpose of ditamap files](https://www.oxygenxml.com/dita/styleguide/webhelp-feedback/Artefact/Maps/c_Working_with_Map_Files.html "Purpose of ditamap files")
 
-Die Maps bestehen vor allem aus topicref-elementen. Diese gehören zur hierarchy und gegebenenfalls zu relationship tables.
+Die Maps bestehen vor allem aus topicref-elementen. Sie können hierarchisch angeordnet sein und zu relationship tables gehören.
 
 ## Beispiel topic map
 
@@ -245,7 +268,7 @@ Die Maps bestehen vor allem aus topicref-elementen. Diese gehören zur hierarchy
   <topicref href="conclusion.dita"/>
 </map>
 ```
-Quelle: [DITA for the Impatient](http://www.xmlmind.com/tutorials/DITA/ "DITA for the Impatient")
+<p class="rights">Quelle: [DITA for the Impatient](http://www.xmlmind.com/tutorials/DITA/ "DITA for the Impatient")</p>
 
 
 
@@ -270,6 +293,11 @@ Quelle: [DITA for the Impatient](http://www.xmlmind.com/tutorials/DITA/ "DITA fo
 
 <p class="rights">[Publication and collection defined](https://www.oxygenxml.com/dita/styleguide/webhelp-feedback/Artefact/Maps/c_Publication_Defined.html "Publication and collection defined")</p>
 
+## Variable Inhalte
+
+Beispiele: [Working with Variable Text in DITA](https://www.oxygenxml.com/doc/versions/20.1/ug-editor/topics/eppo-variables.html)
+
+<!--
 ## Zentralisiertes Management von Variablen
 
 **Beispiel:**
@@ -365,7 +393,15 @@ Quelle: [DITA for the Impatient](http://www.xmlmind.com/tutorials/DITA/ "DITA fo
 </reference>
 ```
 
+-->
+
 ## Anpassung/Spezialisierung
+
+> Specialization allows you to define new kinds of information (new structural types or new domains of information), while reusing as much of existing design and code as possible, and minimizing or eliminating the costs of interchange, migration, and maintenance.
+
+<p class="rights">[What is specialization?](https://docs.oasis-open.org/dita/v1.0/archspec/specialize.html)</p>
+
+---
 
 Tutorial: [DITA Configuration and Specialization Tutorials](http://www.xiruss.org/tutorials/dita-specialization/ "DITA Configuration and Specialization Tutorials")
 
