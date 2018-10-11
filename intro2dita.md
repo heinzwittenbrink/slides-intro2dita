@@ -75,6 +75,8 @@ Die Hilfe zu Adobe Framemaker ist generell eine gute Einführung in DITA https:/
 
 - Minimalismus
 
+- Information Mapping
+
 - Vererbung/Objektorientierung
 
 ## Minimalismus
@@ -95,6 +97,23 @@ Nach JoAnn Hackos
 
 <p class="rights">[What is Minimalism? | Every Page is Page One](https://everypageispageone.com/2013/07/02/what-is-minimalism/ "What is Minimalism? | Every Page is Page One")</p>
 
+
+## Information Mapping
+
+Video: [Information Mapping - What is it? Why use it? - YouTube](https://www.youtube.com/watch?v=Fyj6txJR3g8)
+
+---
+
+> Information Mapping® provides a number of tools that help you to analyze, organize and present information:
+
+>  Information Types [...]
+>  Research-Based Principles [...]
+>  Units of Information [...]
+>  Presentation Modes [...]
+
+Quelle: [The Information Mapping® Method - Information Mapping](https://www.informationmapping.com/en/?option=com_content&view=article&id=50&Itemid=400)
+
+
 ## Vererbung
 
 ![](https://upload.wikimedia.org/wikipedia/commons/thumb/d/d8/InheritancePgmExample.svg/1600px-InheritancePgmExample.svg.png){width=60%}
@@ -114,6 +133,7 @@ Nach JoAnn Hackos
 > Inheritance also plays an important role in DITA specialization, which allows you to extend a base topic to match your specific requirements by defining only the differences between it and its base topic; the bulk of the specialized definition is inherited.
 
 <p class="rights">[Inheritance](http://dita-ot.sourceforge.net/doc/ot-userguide/xhtml/core_vocabulary/inheritance.html "Inheritance")</p>
+
 
 ## DITA-Basics in Code-Beispielen
 
@@ -604,6 +624,12 @@ Siehe dazu: [ThunderBird: A Sample DITA Documentation Set to Play With – DITA 
 
 - [DITA Open Toolkit](http://www.dita-ot.org/ "DITA Open Toolkit")
 
+## Gruppen und Listen
+
+DITA Awareness Group: <https://www.linkedin.com/groups/162465/>
+DITA for Small Teams: <https://www.linkedin.com/groups/3968768/>
+DITA Metrics (for effort estimation and ROI calculations): <https://www.linkedin.com/groups/2916249/>
+
 ## Sammlung von DITA Links (Heinz Wittenbrink)
 
 [Pinboard: bookmarks for heinzwittenbrink tagged 'dita'](https://www.pinboard.in/u:heinzwittenbrink/t:DITA/ "Pinboard: bookmarks for heinzwittenbrink tagged 'dita'")
@@ -697,6 +723,10 @@ M00087-3:samples heinz$ dita --input=sequence.ditamap --format=html5 --output=ou
 
 - URL dieser Präsentation: <https://heinzwittenbrink.github.io/slides-intro2dita/>
 - Präsentation auf Github: <https://github.com/heinzwittenbrink/slides-intro2dita>
+
+---
+
+Dank an [Lief Erickson](https://twitter.com/lief_erickson) für wertvollen Input!
 
 ## Weitere Präsentationen zu DITA
 
