@@ -3,11 +3,16 @@ title: DITA-Einführung
 author: Heinz Wittenbrink
 date: 2018-10-06
 ---
-##{data-background="https://www.dita-ot.org/images/dita-logo.png" data-background-size="contain"}
 
+# Intro
+
+
+##
+
+![](pics/dita-logo.png)
 <p class="rights">Bild: <https://www.dita-ot.org/> </p>
 
----
+##
 
 > - **D** arwin: Evolutionäre Weiterentwicklung
 > - **I** nformation: Praktisch und mehrfach nutzbare Inhalte
@@ -22,9 +27,9 @@ date: 2018-10-06
 - Kenntnis von Anwendungsfällen und Business Cases
 - Überlegungen zu DITA in der Content-Strategie
 
-## Sehr gute Einführung
+## Einführung von Sarah O'Keefe
 
-Sarah O'Keefe:
+![](pics/sarah-dita_intro.png)
 
 [DITA 101 - YouTube](https://www.youtube.com/watch?v=tBRyBYWGCqI)
 
@@ -52,8 +57,9 @@ Sarah O'Keefe:
 
 ## Wie funktioniert DITA?
 
+##
 
-##{data-background="https://help.adobe.com/en_US/framemaker/2017/using/assets/dita_fm.png" data-background-size="contain"}
+![](https://help.adobe.com/en_US/framemaker/2017/using/assets/dita_fm.png)
 
 <p class="rights">Bild: [Adobe Systems](https://help.adobe.com/en_US/framemaker/2017/using/index.html#t=using-framemaker-2017%2Ffrm_structauthdita_sd%2FDITA_maps-.htm) [![Creative Commons — Attribution-NonCommercial-ShareAlike 3.0 Unported — CC BY-NC-SA 3.0](https://helpx.adobe.com/etc/designs/help/images/CC.png)](https://creativecommons.org/licenses/by-nc-sa/3.0/)</p>
 
@@ -91,7 +97,7 @@ Nach JoAnn Hackos
 <p class="rights">Zitiert nach: [What is Minimalism? | Every Page is Page One](https://everypageispageone.com/2013/07/02/what-is-minimalism/ "What is Minimalism? | Every Page is Page One")</p>
 
 
----
+##
 
 > People are situated in a world more real to them than a series of steps, a world that provides rich context and convention for everything they do. People are always already trying things out, thinking things through, trying to relate what they already know to what is going on, recovering from errors. In a word, they are too busy learning to make much use of the instructions. (J.M.Carrol)
 
@@ -102,7 +108,7 @@ Nach JoAnn Hackos
 
 Video: [Information Mapping - What is it? Why use it? - YouTube](https://www.youtube.com/watch?v=Fyj6txJR3g8)
 
----
+##
 
 > Information Mapping® provides a number of tools that help you to analyze, organize and present information:
 
@@ -120,7 +126,7 @@ Quelle: [The Information Mapping® Method - Information Mapping](https://www.inf
 
 <p class="rights">Quelle: [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:InheritancePgmExample.svg), Urheber: [User:Cactus26](https://commons.wikimedia.org/wiki/User:Cactus26), [![](https://helpx.adobe.com/etc/designs/help/images/CC.png)](https://creativecommons.org/licenses/by-nc-sa/3.0/)</p>
 
----
+##
 
 > In object-oriented programming, inheritance is a way to form new classes using classes that have already been defined. ...
 
@@ -128,7 +134,7 @@ Quelle: [The Information Mapping® Method - Information Mapping](https://www.inf
 
 <p class="rights">[Inheritance](http://dita-ot.sourceforge.net/doc/ot-userguide/xhtml/core_vocabulary/inheritance.html "Inheritance")</p>
 
----
+##
 
 > Inheritance also plays an important role in DITA specialization, which allows you to extend a base topic to match your specific requirements by defining only the differences between it and its base topic; the bulk of the specialized definition is inherited.
 
@@ -162,7 +168,7 @@ Quelle: [The Information Mapping® Method - Information Mapping](https://www.inf
 </topic>
 ```
 
----
+##
 
 - Topics haben eine `id`.
 - Die `audience` kann insgesamt oder bei einzelnen Elementen festgelegt werden.
@@ -184,13 +190,13 @@ This is an information useful for the bar audience.
 
 <p class="rights">Quelle: [DITA topics](https://docs.oasis-open.org/dita/v1.0/archspec/topicover.html "DITA topics")</p>
 
----
+##
 
 > Topics are the basis for high-quality information. They should be short enough to be easily readable, but long enough to make sense on their own.
 
 <p class="rights">Quelle: [DITA topics](https://docs.oasis-open.org/dita/v1.0/archspec/topicover.html "DITA topics")</p>
 
----
+##
 
 > Information typing is the practice of identifying types of topics that contain distinct kinds information, such as concepts, tasks, and reference information. Topics that answer different kinds of questions can be categorized as different information types. The base topic types provided by DITA ( a generic topic, plus concept, task, and reference ) provide a usable starter set that can be adopted for immediate authoring.
 
@@ -198,21 +204,19 @@ This is an information useful for the bar audience.
 
 ## Grundlegende Topic-Typen
 
----
-
 - *Concepts*: DITA concept topics answer "What is..." questions. They include a body-level element with a basic topic structure, including sections and examples.
 
 <p class="rights">Quelle: [DITA topics](https://docs.oasis-open.org/dita/v1.0/archspec/topicover.html "DITA topics")</p>
 
 
----
+##
 
 - *Tasks*: Task topics answer "How do I?" questions, and have a well-defined structure that describes how to complete a procedure to accomplish a specific goal.
 
 <p class="rights">Quelle: [DITA topics](https://docs.oasis-open.org/dita/v1.0/archspec/topicover.html "DITA topics")</p>
 
 
----
+##
 
 - *Reference*: Reference topics describe regular features of a subject or product, such as commands in a programming language.
 
@@ -227,7 +231,9 @@ This is an information useful for the bar audience.
 
 # Publizieren
 
-##{data-background="pics/dita-ot_output.png" data-background-size="contain"}
+##
+
+![](pics/dita-ot_output.png)
 
 <p class="rights">Quelle: [DITA Open Toolkit](https://www.dita-ot.org/)</p>
 
@@ -245,7 +251,7 @@ This is an information useful for the bar audience.
 -  *Hierarchy Definition*: Reihenfolge, Bedeutung, Navigationswege
 -  *Link*-Beziehungen
 
----
+##
 
 Siehe zu den Maps: [Purpose of ditamap files](https://www.oxygenxml.com/dita/styleguide/webhelp-feedback/Artefact/Maps/c_Working_with_Map_Files.html "Purpose of ditamap files")
 
@@ -418,7 +424,7 @@ Beispiele: [Working with Variable Text in DITA](https://www.oxygenxml.com/doc/ve
 
 <p class="rights">[What is specialization?](https://docs.oasis-open.org/dita/v1.0/archspec/specialize.html)</p>
 
----
+##
 
 Tutorial: [DITA Configuration and Specialization Tutorials](http://www.xiruss.org/tutorials/dita-specialization/ "DITA Configuration and Specialization Tutorials")
 
@@ -523,13 +529,11 @@ Material: [History of DITA | DITA XML.org](http://dita-archive.xml.org/book/hist
 
 ## Component Based Content Management Systems
 
----
-
 > For the average CCM system, the content is created in smaller-than-page chunks, and assembled, much like a content mashup, to create a larger-sized page for output. A change is made to a component, which can be a single word, phrase, paragraph, or larger, which is then compiled, much like a software “build”, which generates a presentation version of the specified sources. The aggregated content can be pushed out to a Web page, a PDF, or a print destination.
 
 <p class="rights">Rahel Bailie: [Component content management as content mash-ups](http://intentionaldesign.ca/2009/09/11/component-content-management-as-content-mashup/ "Component content management as content mash-ups | Intentional Design Inc.")</p>
 
----
+##
 
 [DITA CMSes – DITA Writer](http://www.ditawriter.com/list-of-dita-capable-cmses/ "DITA CMSes – DITA Writer")
 
@@ -561,6 +565,87 @@ Material: [History of DITA | DITA XML.org](http://dita-archive.xml.org/book/hist
 ## Adobe DITA World
 
 [Adobe DITA World 2018 – Home](https://2018-adobe-dita-world.meetus.adobeevents.com/)
+
+# Lightweight DITA
+
+##
+
+> Lightweight DITAis a simplified version of the Darwin Information Typing Architecture. In comparison to DITA 1.3, LwDITA has a smaller element and attribute set, stricter content models, and a reduced feature set. LwDITA also defines mappings between XML, HTML5, and Markdown.
+
+## Beispiel für einen Topic in Markdown
+
+```markdown
+
+
+# Installing and Setting up Remote Lighting
+
+Installation of your lighting kit includes installing the light bulbs into light fixtures, preparing the remote control, and programming lighting groups.
+
+## Steps
+
+  1. Install light bulbs.
+  2. Prepare remote control.
+  3. Program lighting groups.
+
+## Example
+
+ ![Image](remote.png)
+
+ ```
+
+ ## Beispiel erweiterter Topic mit YAML Header
+
+ ```markdown
+
+ ---
+ id: install-and-setup
+ author: Kevin Lewis
+ ---
+
+ # Installing and Setting up Remote Lighting
+
+ Installation of your lighting kit includes installing the light bulbs into light fixtures, preparing the remote control, and programming lighting groups.
+
+ Before you attempt to install your lighting kit, please turn off the power in your electrical circuit panel,
+
+ ## Steps
+
+   1. Install light bulbs.
+   2. Prepare remote control.
+   3. Program lighting groups.
+
+ ## Example
+
+ The following video demonstrates a recommended installation:
+
+ <video src="remote.mp4" controls poster="remote.png" />
+
+ ```
+
+
+## Beispiel für eine Map in Markdown
+
+
+```Markdown
+# Remote Lighting Network
+
+   - [Introduction](introduction.md)
+   - [Alternative lighting setups](alternatives.md)
+       - [Low power installation](low-power.md)
+       - [High power installation](high-power.md)
+```
+
+## Material
+
+[Lightweight DITA: An Introduction](http://docs.oasis-open.org/dita/LwDITA/v1.0/cnprd01/LwDITA-v1.0-cnprd01.html#example-of-an-mdita-map)
+
+[Markdown DITA syntax reference](https://www.dita-ot.org/dev/topics/markdown-dita-syntax-reference.html)
+
+[Lightweight DITA and DITA 2\.0 \- DITA Now and in the Future \- IXIASOFT](https://www.ixiasoft.com/lightweight-dita-and-dita-2/)
+
+[Marking Down DITA · infotexture](https://infotexture.net/2015/04/dita-ot-markdown-plugin/)
+
+
 
 
 # Material
@@ -711,7 +796,7 @@ M00087-3:samples heinz$ dita --input=sequence.ditamap --format=html5 --output=ou
 
 [Apache(tm) FOP: Quick Start Guide](https://xmlgraphics.apache.org/fop/quickstartguide.html "Apache(tm) FOP: Quick Start Guide")
 
----
+##
 
 ![XSL-FO-Processing](https://upload.wikimedia.org/wikipedia/commons/5/58/XSL-FO.png "File:XSL-FO.png - Wikimedia Commons")
 
@@ -719,12 +804,12 @@ M00087-3:samples heinz$ dita --input=sequence.ditamap --format=html5 --output=ou
 
 [![License: ODbL](https://img.shields.io/badge/License-PDDL-brightgreen.svg)](https://opendatacommons.org/licenses/pddl/)
 
----
+##
 
 - URL dieser Präsentation: <https://heinzwittenbrink.github.io/slides-intro2dita/>
 - Präsentation auf Github: <https://github.com/heinzwittenbrink/slides-intro2dita>
 
----
+##
 
 Dank an [Lief Erickson](https://twitter.com/lief_erickson) für wertvollen Input!
 
@@ -734,7 +819,7 @@ Dank an [Lief Erickson](https://twitter.com/lief_erickson) für wertvollen Input
 
 ## Vielen Dank!
 
----
+##
 
 [\@heinz](https://twitter.com/heinz?lang=de "Heinz Wittenbrink (@heinz) | Twitter")
 

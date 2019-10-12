@@ -9,77 +9,108 @@
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
-  <link rel="stylesheet" href="reveal.js/css/reveal.css">
-  <style type="text/css">code{white-space: pre;}</style>
+  <link rel="stylesheet" href="https://revealjs.com/css/reveal.css">
   <style type="text/css">
-div.sourceCode { overflow-x: auto; }
-table.sourceCode, tr.sourceCode, td.lineNumbers, td.sourceCode {
-  margin: 0; padding: 0; vertical-align: baseline; border: none; }
-table.sourceCode { width: 100%; line-height: 100%; }
-td.lineNumbers { text-align: right; padding-right: 4px; padding-left: 4px; color: #aaaaaa; border-right: 1px solid #aaaaaa; }
-td.sourceCode { padding-left: 5px; }
-code > span.kw { color: #007020; font-weight: bold; } /* Keyword */
-code > span.dt { color: #902000; } /* DataType */
-code > span.dv { color: #40a070; } /* DecVal */
-code > span.bn { color: #40a070; } /* BaseN */
-code > span.fl { color: #40a070; } /* Float */
-code > span.ch { color: #4070a0; } /* Char */
-code > span.st { color: #4070a0; } /* String */
-code > span.co { color: #60a0b0; font-style: italic; } /* Comment */
-code > span.ot { color: #007020; } /* Other */
-code > span.al { color: #ff0000; font-weight: bold; } /* Alert */
-code > span.fu { color: #06287e; } /* Function */
-code > span.er { color: #ff0000; font-weight: bold; } /* Error */
-code > span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
-code > span.cn { color: #880000; } /* Constant */
-code > span.sc { color: #4070a0; } /* SpecialChar */
-code > span.vs { color: #4070a0; } /* VerbatimString */
-code > span.ss { color: #bb6688; } /* SpecialString */
-code > span.im { } /* Import */
-code > span.va { color: #19177c; } /* Variable */
-code > span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
-code > span.op { color: #666666; } /* Operator */
-code > span.bu { } /* BuiltIn */
-code > span.ex { } /* Extension */
-code > span.pp { color: #bc7a00; } /* Preprocessor */
-code > span.at { color: #7d9029; } /* Attribute */
-code > span.do { color: #ba2121; font-style: italic; } /* Documentation */
-code > span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
-code > span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
-code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
   </style>
-  <link rel="stylesheet" href="reveal.js/css/theme/white.css" id="theme">
-  <link rel="stylesheet" href="customizations.css"/>
+  <style type="text/css">
+a.sourceLine { display: inline-block; line-height: 1.25; }
+a.sourceLine { pointer-events: none; color: inherit; text-decoration: inherit; }
+a.sourceLine:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode { white-space: pre; position: relative; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+code.sourceCode { white-space: pre-wrap; }
+a.sourceLine { text-indent: -1em; padding-left: 1em; }
+}
+pre.numberSource a.sourceLine
+  { position: relative; left: -4em; }
+pre.numberSource a.sourceLine::before
+  { content: attr(data-line-number);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; pointer-events: all; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {  }
+@media screen {
+a.sourceLine::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+  </style>
+  <link rel="stylesheet" href="https://revealjs.com/css/theme/white.css" id="theme">
+  <link rel="stylesheet" href="https://heinzwittenbrink.github.io/styles/customizations.css"/>
   <!-- Printing and PDF exports -->
   <script>
     var link = document.createElement( 'link' );
     link.rel = 'stylesheet';
     link.type = 'text/css';
-    link.href = window.location.search.match( /print-pdf/gi ) ? 'reveal.js/css/print/pdf.css' : 'reveal.js/css/print/paper.css';
+    link.href = window.location.search.match( /print-pdf/gi ) ? 'https://revealjs.com/css/print/pdf.css' : 'https://revealjs.com/css/print/paper.css';
     document.getElementsByTagName( 'head' )[0].appendChild( link );
   </script>
   <!--[if lt IE 9]>
-  <script src="reveal.js/lib/js/html5shiv.js"></script>
+  <script src="https://revealjs.com/lib/js/html5shiv.js"></script>
   <![endif]-->
 </head>
 <body>
   <div class="reveal">
     <div class="slides">
 
-<section>
+<section id="title-slide">
   <h1 class="title">DITA-Einführung</h1>
-  <h2 class="author">Heinz Wittenbrink</h2>
-  <h3 class="date">2018-10-06</h3>
+  <p class="author">Heinz Wittenbrink</p>
+  <p class="date">2018-10-06</p>
 </section>
 
-<section id="section" class="slide level2" data-background="https://www.dita-ot.org/images/dita-logo.png" data-background-size="contain">
-<h1></h1>
+<section><section id="intro" class="title-slide slide level1"><h1>Intro</h1></section><section id="section" class="slide level2">
+<h2></h2>
+<img data-src="pics/dita-logo.png" />
 <p class="rights">
 Bild: <a href="https://www.dita-ot.org/" class="uri">https://www.dita-ot.org/</a>
 </p>
-</section>
-<section class="slide level2">
-
+</section><section id="section-1" class="slide level2">
+<h2></h2>
 <ul>
 <li class="fragment"><strong>D</strong> arwin: Evolutionäre Weiterentwicklung</li>
 <li class="fragment"><strong>I</strong> nformation: Praktisch und mehrfach nutzbare Inhalte</li>
@@ -87,25 +118,23 @@ Bild: <a href="https://www.dita-ot.org/" class="uri">https://www.dita-ot.org/</a
 <li class="fragment"><strong>A</strong> rchitecture: Komponenten für Wiederverwendung und Publikationen</li>
 </ul>
 <p class="rights">
-Orientiert an: <a href="https://www.youtube.com/watch?v=ngHIIWbEp_Q">Sarah O'Keefe, DITA 101 webcast</a>
+Orientiert an: <a href="https://www.youtube.com/watch?v=ngHIIWbEp_Q">Sarah O’Keefe, DITA 101 webcast</a>
 </p>
-</section>
-<section id="zielsetzung" class="slide level2">
-<h1>Zielsetzung</h1>
+</section><section id="zielsetzung" class="slide level2">
+<h2>Zielsetzung</h2>
 <ul>
 <li>Grundwissen über DITA</li>
 <li>Kenntnis von Anwendungsfällen und Business Cases</li>
 <li>Überlegungen zu DITA in der Content-Strategie</li>
 </ul>
-</section>
-<section id="sehr-gute-einführung" class="slide level2">
-<h1>Sehr gute Einführung</h1>
-<p>Sarah O'Keefe:</p>
+</section><section id="einführung-von-sarah-okeefe" class="slide level2">
+<h2>Einführung von Sarah O’Keefe</h2>
+<p><img data-src="pics/sarah-dita_intro.png" /></p>
 <p><a href="https://www.youtube.com/watch?v=tBRyBYWGCqI">DITA 101 - YouTube</a></p>
 <p><a href="https://de.slideshare.net/Scriptorium/dita-101">DITA 101</a></p>
-</section>
-<section><section id="dita-basics" class="titleslide slide level1"><h1>DITA-Basics</h1></section><section id="warum-dita" class="slide level2">
-<h1>Warum DITA?</h1>
+</section></section>
+<section><section id="dita-basics" class="title-slide slide level1"><h1>DITA-Basics</h1></section><section id="warum-dita" class="slide level2">
+<h2>Warum DITA?</h2>
 <ul>
 <li><p>Wiederverwendbarkeit von Inhalten</p></li>
 <li><p>Wiederverwendbarkeit von Modellen</p></li>
@@ -113,7 +142,7 @@ Orientiert an: <a href="https://www.youtube.com/watch?v=ngHIIWbEp_Q">Sarah O'Kee
 <li><p>Orientierung an digitaler Ausgabe statt an papier-basierten Formaten</p></li>
 </ul>
 </section><section id="typische-vorteile" class="slide level2">
-<h1>Typische Vorteile</h1>
+<h2>Typische Vorteile</h2>
 <ul>
 <li><p>die Veröffentlichung einer Menge von Informationsprodukten für unterschiedliche Benutzergruppen und über mehrere Releases hinweg unterstützen</p></li>
 <li><p>neue Zusammenstellungen von Inhalten einführen, die neue Inhaltstypen erfordern (z.B. Hardware Dokumentation, Geschäftsprozesse usw.)</p></li>
@@ -122,29 +151,30 @@ Orientiert an: <a href="https://www.youtube.com/watch?v=ngHIIWbEp_Q">Sarah O'Kee
 <a href="https://github.com/dita-community/dita-demo-content-collection/tree/dita-1.3">Gnostyx DITA Demonstration Documents</a>
 </p>
 </section><section id="wie-funktioniert-dita" class="slide level2">
-<h1>Wie funktioniert DITA?</h1>
-</section><section id="section-1" class="slide level2" data-background="https://help.adobe.com/en_US/framemaker/2017/using/assets/dita_fm.png" data-background-size="contain">
-<h1></h1>
+<h2>Wie funktioniert DITA?</h2>
+</section><section id="section-2" class="slide level2">
+<h2></h2>
+<p><img data-src="https://help.adobe.com/en_US/framemaker/2017/using/assets/dita_fm.png" /></p>
 <p class="rights">
-Bild: <a href="https://help.adobe.com/en_US/framemaker/2017/using/index.html#t=using-framemaker-2017%2Ffrm_structauthdita_sd%2FDITA_maps-.htm">Adobe Systems</a> <a href="https://creativecommons.org/licenses/by-nc-sa/3.0/"><img src="https://helpx.adobe.com/etc/designs/help/images/CC.png" alt="Creative Commons — Attribution-NonCommercial-ShareAlike 3.0 Unported — CC BY-NC-SA 3.0" /></a>
+Bild: <a href="https://help.adobe.com/en_US/framemaker/2017/using/index.html#t=using-framemaker-2017%2Ffrm_structauthdita_sd%2FDITA_maps-.htm">Adobe Systems</a> <a href="https://creativecommons.org/licenses/by-nc-sa/3.0/"><img data-src="https://helpx.adobe.com/etc/designs/help/images/CC.png" alt="Creative Commons — Attribution-NonCommercial-ShareAlike 3.0 Unported — CC BY-NC-SA 3.0" /></a>
 </p>
 <aside class="notes">
 <p>Die Hilfe zu Adobe Framemaker ist generell eine gute Einführung in DITA https://help.adobe.com/en_US/framemaker/2017/using/index.html</p>
 </aside>
 </section><section id="dita-use-cases" class="slide level2">
-<h1>DITA Use Cases</h1>
+<h2>DITA Use Cases</h2>
 <p><a href="https://www.oxygenxml.com/case_study_Freescale_Semiconductor.html">Freescale Semiconductor Inc</a></p>
 <p><a href="https://componize.com/assessment-6-years-using-dita-esko/">Esko</a> (<a href="https://pbs.twimg.com/media/C6U9A4YXEAER9Pl.jpg:large">Infografik</a>)</p>
 <p><a href="http://go.easydita.com/skyward-case-study">Skyward Case Study</a></p>
 </section><section id="design-prinzipien" class="slide level2">
-<h1>Design-Prinzipien</h1>
+<h2>Design-Prinzipien</h2>
 <ul>
 <li><p>Minimalismus</p></li>
 <li><p>Information Mapping</p></li>
 <li><p>Vererbung/Objektorientierung</p></li>
 </ul>
 </section><section id="minimalismus" class="slide level2">
-<h1>Minimalismus</h1>
+<h2>Minimalismus</h2>
 <p>Nach JoAnn Hackos</p>
 <ul>
 <li class="fragment">Principle 1: Choose an action-oriented approach</li>
@@ -155,8 +185,8 @@ Bild: <a href="https://help.adobe.com/en_US/framemaker/2017/using/index.html#t=u
 <p class="rights">
 Zitiert nach: <a href="https://everypageispageone.com/2013/07/02/what-is-minimalism/" title="What is Minimalism? | Every Page is Page One">What is Minimalism? | Every Page is Page One</a>
 </p>
-</section><section class="slide level2">
-
+</section><section id="section-3" class="slide level2">
+<h2></h2>
 <blockquote>
 <p>People are situated in a world more real to them than a series of steps, a world that provides rich context and convention for everything they do. People are always already trying things out, thinking things through, trying to relate what they already know to what is going on, recovering from errors. In a word, they are too busy learning to make much use of the instructions. (J.M.Carrol)</p>
 </blockquote>
@@ -164,29 +194,27 @@ Zitiert nach: <a href="https://everypageispageone.com/2013/07/02/what-is-minimal
 <a href="https://everypageispageone.com/2013/07/02/what-is-minimalism/" title="What is Minimalism? | Every Page is Page One">What is Minimalism? | Every Page is Page One</a>
 </p>
 </section><section id="information-mapping" class="slide level2">
-<h1>Information Mapping</h1>
+<h2>Information Mapping</h2>
 <p>Video: <a href="https://www.youtube.com/watch?v=Fyj6txJR3g8">Information Mapping - What is it? Why use it? - YouTube</a></p>
-</section><section class="slide level2">
-
+</section><section id="section-4" class="slide level2">
+<h2></h2>
 <blockquote>
 <p>Information Mapping® provides a number of tools that help you to analyze, organize and present information:</p>
 </blockquote>
 <blockquote>
-<p>Information Types [...] Research-Based Principles [...] Units of Information [...] Presentation Modes [...]</p>
+<p>Information Types […] Research-Based Principles […] Units of Information […] Presentation Modes […]</p>
 </blockquote>
 <p>Quelle: <a href="https://www.informationmapping.com/en/?option=com_content&amp;view=article&amp;id=50&amp;Itemid=400">The Information Mapping® Method - Information Mapping</a></p>
 </section><section id="vererbung" class="slide level2">
-<h1>Vererbung</h1>
-<figure>
-<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d8/InheritancePgmExample.svg/1600px-InheritancePgmExample.svg.png" style="width:60.0%" />
-</figure>
+<h2>Vererbung</h2>
+<p><img data-src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d8/InheritancePgmExample.svg/1600px-InheritancePgmExample.svg.png" style="width:60.0%" /></p>
 <p class="rights">
-Quelle: <a href="https://commons.wikimedia.org/wiki/File:InheritancePgmExample.svg">Wikimedia Commons</a>, Urheber: <a href="https://commons.wikimedia.org/wiki/User:Cactus26">User:Cactus26</a>, <a href="https://creativecommons.org/licenses/by-nc-sa/3.0/"><img src="https://helpx.adobe.com/etc/designs/help/images/CC.png" /></a>
+Quelle: <a href="https://commons.wikimedia.org/wiki/File:InheritancePgmExample.svg">Wikimedia Commons</a>, Urheber: <a href="https://commons.wikimedia.org/wiki/User:Cactus26">User:Cactus26</a>, <a href="https://creativecommons.org/licenses/by-nc-sa/3.0/"><img data-src="https://helpx.adobe.com/etc/designs/help/images/CC.png" /></a>
 </p>
-</section><section class="slide level2">
-
+</section><section id="section-5" class="slide level2">
+<h2></h2>
 <blockquote>
-<p>In object-oriented programming, inheritance is a way to form new classes using classes that have already been defined. ...</p>
+<p>In object-oriented programming, inheritance is a way to form new classes using classes that have already been defined. …</p>
 </blockquote>
 <blockquote>
 <p>In DITA, child topics or elements inherit attributes from their parents. For example, metadata applied to a section of a DITA file will automatically be applied to topics contained in the section.</p>
@@ -194,8 +222,8 @@ Quelle: <a href="https://commons.wikimedia.org/wiki/File:InheritancePgmExample.s
 <p class="rights">
 <a href="http://dita-ot.sourceforge.net/doc/ot-userguide/xhtml/core_vocabulary/inheritance.html" title="Inheritance">Inheritance</a>
 </p>
-</section><section class="slide level2">
-
+</section><section id="section-6" class="slide level2">
+<h2></h2>
 <blockquote>
 <p>Inheritance also plays an important role in DITA specialization, which allows you to extend a base topic to match your specific requirements by defining only the differences between it and its base topic; the bulk of the specialized definition is inherited.</p>
 </blockquote>
@@ -203,58 +231,58 @@ Quelle: <a href="https://commons.wikimedia.org/wiki/File:InheritancePgmExample.s
 <a href="http://dita-ot.sourceforge.net/doc/ot-userguide/xhtml/core_vocabulary/inheritance.html" title="Inheritance">Inheritance</a>
 </p>
 </section><section id="dita-basics-in-code-beispielen" class="slide level2">
-<h1>DITA-Basics in Code-Beispielen</h1>
+<h2>DITA-Basics in Code-Beispielen</h2>
 <p>(Quelle: <a href="https://en.wikipedia.org/wiki/Darwin_Information_Typing_Architecture" title="Darwin Information Typing Architecture - Wikipedia">Darwin Information Typing Architecture - Wikipedia</a></p>
 </section><section id="ditamap-file-table-of-contents-sample" class="slide level2">
-<h1>Ditamap file (table of contents) sample</h1>
-<div class="sourceCode"><pre class="sourceCode xml"><code class="sourceCode xml"><span class="kw">&lt;?xml</span> version=&quot;1.0&quot; encoding=&quot;utf-8&quot;<span class="kw">?&gt;</span>
-<span class="dt">&lt;!DOCTYPE </span>map PUBLIC &quot;-//OASIS//DTD DITA Map//EN&quot; &quot;map.dtd&quot;<span class="dt">&gt;</span>
-<span class="kw">&lt;map</span><span class="ot"> id=</span><span class="st">&quot;map&quot;</span><span class="ot"> xml:lang=</span><span class="st">&quot;en&quot;</span><span class="kw">&gt;</span>
-  <span class="kw">&lt;topicref</span><span class="ot"> format=</span><span class="st">&quot;dita&quot;</span><span class="ot"> href=</span><span class="st">&quot;sample.dita&quot;</span><span class="ot"> navtitle=</span><span class="st">&quot;Sample&quot;</span><span class="ot"> type=</span><span class="st">&quot;topic&quot;</span><span class="kw">/&gt;</span>
-<span class="kw">&lt;/map&gt;</span></code></pre></div>
+<h2>Ditamap file (table of contents) sample</h2>
+<div class="sourceCode" id="cb1"><pre class="sourceCode xml"><code class="sourceCode xml"><a class="sourceLine" id="cb1-1" data-line-number="1"><span class="kw">&lt;?xml</span> version=&quot;1.0&quot; encoding=&quot;utf-8&quot;<span class="kw">?&gt;</span></a>
+<a class="sourceLine" id="cb1-2" data-line-number="2"><span class="dt">&lt;!DOCTYPE </span>map PUBLIC &quot;-//OASIS//DTD DITA Map//EN&quot; &quot;map.dtd&quot;<span class="dt">&gt;</span></a>
+<a class="sourceLine" id="cb1-3" data-line-number="3"><span class="kw">&lt;map</span><span class="ot"> id=</span><span class="st">&quot;map&quot;</span><span class="ot"> xml:lang=</span><span class="st">&quot;en&quot;</span><span class="kw">&gt;</span></a>
+<a class="sourceLine" id="cb1-4" data-line-number="4">  <span class="kw">&lt;topicref</span><span class="ot"> format=</span><span class="st">&quot;dita&quot;</span><span class="ot"> href=</span><span class="st">&quot;sample.dita&quot;</span><span class="ot"> navtitle=</span><span class="st">&quot;Sample&quot;</span><span class="ot"> type=</span><span class="st">&quot;topic&quot;</span><span class="kw">/&gt;</span></a>
+<a class="sourceLine" id="cb1-5" data-line-number="5"><span class="kw">&lt;/map&gt;</span></a></code></pre></div>
 </section><section id="hello-world-topic-dtd" class="slide level2">
-<h1>Hello World (topic DTD)</h1>
-<div class="sourceCode"><pre class="sourceCode xml"><code class="sourceCode xml"><span class="kw">&lt;?xml</span> version=&quot;1.0&quot; encoding=&quot;utf-8&quot;<span class="kw">?&gt;</span>
-<span class="dt">&lt;!DOCTYPE </span>topic PUBLIC &quot;-//OASIS//DTD DITA Topic//EN&quot; &quot;topic.dtd&quot;<span class="dt">&gt;</span>
-<span class="kw">&lt;topic</span><span class="ot"> xml:lang=</span><span class="st">&quot;en&quot;</span><span class="ot"> id=</span><span class="st">&quot;sample&quot;</span><span class="kw">&gt;</span>
-  <span class="kw">&lt;title&gt;</span>Sample<span class="kw">&lt;/title&gt;</span>
-  <span class="kw">&lt;body&gt;</span>
-  <span class="kw">&lt;p</span><span class="ot"> audience=</span><span class="st">&quot;foo&quot;</span><span class="kw">&gt;</span>Hello World!<span class="kw">&lt;/p&gt;</span>
-  <span class="kw">&lt;/body&gt;</span>
-<span class="kw">&lt;/topic&gt;</span></code></pre></div>
-</section><section class="slide level2">
-
+<h2>Hello World (topic DTD)</h2>
+<div class="sourceCode" id="cb2"><pre class="sourceCode xml"><code class="sourceCode xml"><a class="sourceLine" id="cb2-1" data-line-number="1"><span class="kw">&lt;?xml</span> version=&quot;1.0&quot; encoding=&quot;utf-8&quot;<span class="kw">?&gt;</span></a>
+<a class="sourceLine" id="cb2-2" data-line-number="2"><span class="dt">&lt;!DOCTYPE </span>topic PUBLIC &quot;-//OASIS//DTD DITA Topic//EN&quot; &quot;topic.dtd&quot;<span class="dt">&gt;</span></a>
+<a class="sourceLine" id="cb2-3" data-line-number="3"><span class="kw">&lt;topic</span><span class="ot"> xml:lang=</span><span class="st">&quot;en&quot;</span><span class="ot"> id=</span><span class="st">&quot;sample&quot;</span><span class="kw">&gt;</span></a>
+<a class="sourceLine" id="cb2-4" data-line-number="4">  <span class="kw">&lt;title&gt;</span>Sample<span class="kw">&lt;/title&gt;</span></a>
+<a class="sourceLine" id="cb2-5" data-line-number="5">  <span class="kw">&lt;body&gt;</span></a>
+<a class="sourceLine" id="cb2-6" data-line-number="6">  <span class="kw">&lt;p</span><span class="ot"> audience=</span><span class="st">&quot;foo&quot;</span><span class="kw">&gt;</span>Hello World!<span class="kw">&lt;/p&gt;</span></a>
+<a class="sourceLine" id="cb2-7" data-line-number="7">  <span class="kw">&lt;/body&gt;</span></a>
+<a class="sourceLine" id="cb2-8" data-line-number="8"><span class="kw">&lt;/topic&gt;</span></a></code></pre></div>
+</section><section id="section-7" class="slide level2">
+<h2></h2>
 <ul>
 <li>Topics haben eine <code>id</code>.</li>
 <li>Die <code>audience</code> kann insgesamt oder bei einzelnen Elementen festgelegt werden.</li>
 </ul>
 </section><section id="example-of-conditionalized-text" class="slide level2">
-<h1>Example of conditionalized text:*</h1>
-<div class="sourceCode"><pre class="sourceCode xml"><code class="sourceCode xml"><span class="kw">&lt;?xml</span> version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;<span class="kw">?&gt;</span>
-<span class="kw">&lt;p</span><span class="ot"> audience=</span><span class="st">&quot;foo&quot;</span><span class="kw">&gt;</span>
-This is an information useful for the foo audience!
-<span class="kw">&lt;/p&gt;</span>
-<span class="kw">&lt;p</span><span class="ot"> audience=</span><span class="st">&quot;bar&quot;</span><span class="kw">&gt;</span>
-This is an information useful for the bar audience.
-<span class="kw">&lt;/p&gt;</span></code></pre></div>
+<h2>Example of conditionalized text:*</h2>
+<div class="sourceCode" id="cb3"><pre class="sourceCode xml"><code class="sourceCode xml"><a class="sourceLine" id="cb3-1" data-line-number="1"><span class="kw">&lt;?xml</span> version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;<span class="kw">?&gt;</span></a>
+<a class="sourceLine" id="cb3-2" data-line-number="2"><span class="kw">&lt;p</span><span class="ot"> audience=</span><span class="st">&quot;foo&quot;</span><span class="kw">&gt;</span></a>
+<a class="sourceLine" id="cb3-3" data-line-number="3">This is an information useful for the foo audience!</a>
+<a class="sourceLine" id="cb3-4" data-line-number="4"><span class="kw">&lt;/p&gt;</span></a>
+<a class="sourceLine" id="cb3-5" data-line-number="5"><span class="kw">&lt;p</span><span class="ot"> audience=</span><span class="st">&quot;bar&quot;</span><span class="kw">&gt;</span></a>
+<a class="sourceLine" id="cb3-6" data-line-number="6">This is an information useful for the bar audience.</a>
+<a class="sourceLine" id="cb3-7" data-line-number="7"><span class="kw">&lt;/p&gt;</span></a></code></pre></div>
 </section><section id="topics" class="slide level2">
-<h1>Topics</h1>
+<h2>Topics</h2>
 <blockquote>
 <p>A topic is a unit of information with a title and content, short enough to be specific to a single subject or answer a single question, but long enough to make sense on its own and be authored as a unit.</p>
 </blockquote>
 <p class="rights">
 Quelle: <a href="https://docs.oasis-open.org/dita/v1.0/archspec/topicover.html" title="DITA topics">DITA topics</a>
 </p>
-</section><section class="slide level2">
-
+</section><section id="section-8" class="slide level2">
+<h2></h2>
 <blockquote>
 <p>Topics are the basis for high-quality information. They should be short enough to be easily readable, but long enough to make sense on their own.</p>
 </blockquote>
 <p class="rights">
 Quelle: <a href="https://docs.oasis-open.org/dita/v1.0/archspec/topicover.html" title="DITA topics">DITA topics</a>
 </p>
-</section><section class="slide level2">
-
+</section><section id="section-9" class="slide level2">
+<h2></h2>
 <blockquote>
 <p>Information typing is the practice of identifying types of topics that contain distinct kinds information, such as concepts, tasks, and reference information. Topics that answer different kinds of questions can be categorized as different information types. The base topic types provided by DITA ( a generic topic, plus concept, task, and reference ) provide a usable starter set that can be adopted for immediate authoring.</p>
 </blockquote>
@@ -262,25 +290,23 @@ Quelle: <a href="https://docs.oasis-open.org/dita/v1.0/archspec/topicover.html" 
 Quelle: <a href="https://docs.oasis-open.org/dita/v1.0/archspec/topicover.html" title="DITA topics">DITA topics</a>
 </p>
 </section><section id="grundlegende-topic-typen" class="slide level2">
-<h1>Grundlegende Topic-Typen</h1>
-</section><section class="slide level2">
-
+<h2>Grundlegende Topic-Typen</h2>
 <ul>
-<li><em>Concepts</em>: DITA concept topics answer &quot;What is...&quot; questions. They include a body-level element with a basic topic structure, including sections and examples.</li>
+<li><em>Concepts</em>: DITA concept topics answer “What is…” questions. They include a body-level element with a basic topic structure, including sections and examples.</li>
 </ul>
 <p class="rights">
 Quelle: <a href="https://docs.oasis-open.org/dita/v1.0/archspec/topicover.html" title="DITA topics">DITA topics</a>
 </p>
-</section><section class="slide level2">
-
+</section><section id="section-10" class="slide level2">
+<h2></h2>
 <ul>
-<li><em>Tasks</em>: Task topics answer &quot;How do I?&quot; questions, and have a well-defined structure that describes how to complete a procedure to accomplish a specific goal.</li>
+<li><em>Tasks</em>: Task topics answer “How do I?” questions, and have a well-defined structure that describes how to complete a procedure to accomplish a specific goal.</li>
 </ul>
 <p class="rights">
 Quelle: <a href="https://docs.oasis-open.org/dita/v1.0/archspec/topicover.html" title="DITA topics">DITA topics</a>
 </p>
-</section><section class="slide level2">
-
+</section><section id="section-11" class="slide level2">
+<h2></h2>
 <ul>
 <li><em>Reference</em>: Reference topics describe regular features of a subject or product, such as commands in a programming language.</li>
 </ul>
@@ -288,19 +314,20 @@ Quelle: <a href="https://docs.oasis-open.org/dita/v1.0/archspec/topicover.html" 
 Quelle: <a href="https://docs.oasis-open.org/dita/v1.0/archspec/topicover.html" title="DITA topics">DITA topics</a>
 </p>
 </section><section id="struktur-content-module" class="slide level2">
-<h1>Struktur, Content, Module</h1>
+<h2>Struktur, Content, Module</h2>
 <ul>
 <li><p>Struktur von Topics in der DITA-Dokumentation: <a href="https://www.oxygenxml.com/dita/1.3/specs/archSpec/base/topicstructure.html">Topic structure</a></p></li>
 <li><p>Inhalte eines Topic in der DITA-Dokumentation: <a href="https://www.oxygenxml.com/dita/1.3/specs/archSpec/base/topiccontent.html">Topic content</a></p></li>
 </ul>
 </section></section>
-<section><section id="publizieren" class="titleslide slide level1"><h1>Publizieren</h1></section><section id="section-2" class="slide level2" data-background="pics/dita-ot_output.png" data-background-size="contain">
-<h1></h1>
+<section><section id="publizieren" class="title-slide slide level1"><h1>Publizieren</h1></section><section id="section-12" class="slide level2">
+<h2></h2>
+<p><img data-src="pics/dita-ot_output.png" /></p>
 <p class="rights">
 Quelle: <a href="https://www.dita-ot.org/">DITA Open Toolkit</a>
 </p>
 </section><section id="maps" class="slide level2">
-<h1>Maps</h1>
+<h2>Maps</h2>
 <p><a href="https://www.oxygenxml.com/dita/styleguide/webhelp-feedback/Artefact/Maps/c_Working_with_Map_Files.html" title="Purpose of ditamap files">DITA map files are used for defining the topics of a publication, specifying the topic sequence, and controlling linking between topics.</a></p>
 <ul>
 <li>Defining the topics</li>
@@ -308,55 +335,55 @@ Quelle: <a href="https://www.dita-ot.org/">DITA Open Toolkit</a>
 <li>Controlling linking</li>
 </ul>
 </section><section id="teile-von-maps" class="slide level2">
-<h1>Teile von Maps</h1>
+<h2>Teile von Maps</h2>
 <ul>
 <li><em>Topic Manifest</em>: definiert die Topics in einer Publikation</li>
 <li><em>Hierarchy Definition</em>: Reihenfolge, Bedeutung, Navigationswege</li>
 <li><em>Link</em>-Beziehungen</li>
 </ul>
-</section><section class="slide level2">
-
+</section><section id="section-13" class="slide level2">
+<h2></h2>
 <p>Siehe zu den Maps: <a href="https://www.oxygenxml.com/dita/styleguide/webhelp-feedback/Artefact/Maps/c_Working_with_Map_Files.html" title="Purpose of ditamap files">Purpose of ditamap files</a></p>
 <p>Die Maps bestehen vor allem aus topicref-elementen. Sie können hierarchisch angeordnet sein und zu relationship tables gehören.</p>
 </section><section id="beispiel-topic-map" class="slide level2">
-<h1>Beispiel topic map</h1>
-<div class="sourceCode"><pre class="sourceCode xml"><code class="sourceCode xml"><span class="kw">&lt;map&gt;</span>
-  <span class="kw">&lt;title&gt;</span>DITA for the Impatient<span class="kw">&lt;/title&gt;</span>
-
-  <span class="kw">&lt;topicmeta&gt;</span>
-    <span class="kw">&lt;author&gt;</span>Hussein Shafie<span class="kw">&lt;/author&gt;</span>
-    <span class="kw">&lt;publisher&gt;</span>Pixware<span class="kw">&lt;/publisher&gt;</span>
-    <span class="kw">&lt;critdates&gt;</span>
-      <span class="kw">&lt;created</span><span class="ot"> date=</span><span class="st">&quot;October 7, 2009&quot;</span><span class="kw">/&gt;</span>
-    <span class="kw">&lt;/critdates&gt;</span>
-  <span class="kw">&lt;/topicmeta&gt;</span>
-
-  <span class="kw">&lt;topicref</span><span class="ot"> href=</span><span class="st">&quot;introduction.dita&quot;</span><span class="kw">/&gt;</span>
-  <span class="kw">&lt;topicref</span><span class="ot"> href=</span><span class="st">&quot;topics_and_maps.dita&quot;</span><span class="kw">/&gt;</span>
-  <span class="kw">&lt;topicref</span><span class="ot"> href=</span><span class="st">&quot;topic.dita&quot;</span><span class="kw">&gt;</span>
-    <span class="kw">&lt;topicref</span><span class="ot"> href=</span><span class="st">&quot;topic_structure.dita&quot;</span><span class="kw">&gt;</span>
-      <span class="kw">&lt;topicref</span><span class="ot"> href=</span><span class="st">&quot;samples/sample_topic.dita&quot;</span><span class="ot"> toc=</span><span class="st">&quot;no&quot;</span><span class="kw">/&gt;</span>
-    <span class="kw">&lt;/topicref&gt;</span>
-    <span class="kw">&lt;topicref</span><span class="ot"> href=</span><span class="st">&quot;block_elements.dita&quot;</span><span class="kw">/&gt;</span>
-    <span class="kw">&lt;topicref</span><span class="ot"> href=</span><span class="st">&quot;inline_elements.dita&quot;</span><span class="kw">/&gt;</span>
-    <span class="kw">&lt;topicref</span><span class="ot"> href=</span><span class="st">&quot;link_elements.dita&quot;</span><span class="kw">/&gt;</span>
-  <span class="kw">&lt;/topicref&gt;</span>
-  .
-  .
-  .
-  <span class="kw">&lt;topichead</span><span class="ot"> navtitle=</span><span class="st">&quot;Topic maps&quot;</span><span class="kw">&gt;</span>
-    <span class="kw">&lt;topicref</span><span class="ot"> href=</span><span class="st">&quot;map.dita&quot;</span><span class="kw">/&gt;</span>
-    <span class="kw">&lt;topicref</span><span class="ot"> href=</span><span class="st">&quot;bookmap.dita&quot;</span><span class="kw">/&gt;</span>
-  <span class="kw">&lt;/topichead&gt;</span>
-  <span class="kw">&lt;topicref</span><span class="ot"> href=</span><span class="st">&quot;conclusion.dita&quot;</span><span class="kw">/&gt;</span>
-<span class="kw">&lt;/map&gt;</span></code></pre></div>
+<h2>Beispiel topic map</h2>
+<div class="sourceCode" id="cb4"><pre class="sourceCode xml"><code class="sourceCode xml"><a class="sourceLine" id="cb4-1" data-line-number="1"><span class="kw">&lt;map&gt;</span></a>
+<a class="sourceLine" id="cb4-2" data-line-number="2">  <span class="kw">&lt;title&gt;</span>DITA for the Impatient<span class="kw">&lt;/title&gt;</span></a>
+<a class="sourceLine" id="cb4-3" data-line-number="3"></a>
+<a class="sourceLine" id="cb4-4" data-line-number="4">  <span class="kw">&lt;topicmeta&gt;</span></a>
+<a class="sourceLine" id="cb4-5" data-line-number="5">    <span class="kw">&lt;author&gt;</span>Hussein Shafie<span class="kw">&lt;/author&gt;</span></a>
+<a class="sourceLine" id="cb4-6" data-line-number="6">    <span class="kw">&lt;publisher&gt;</span>Pixware<span class="kw">&lt;/publisher&gt;</span></a>
+<a class="sourceLine" id="cb4-7" data-line-number="7">    <span class="kw">&lt;critdates&gt;</span></a>
+<a class="sourceLine" id="cb4-8" data-line-number="8">      <span class="kw">&lt;created</span><span class="ot"> date=</span><span class="st">&quot;October 7, 2009&quot;</span><span class="kw">/&gt;</span></a>
+<a class="sourceLine" id="cb4-9" data-line-number="9">    <span class="kw">&lt;/critdates&gt;</span></a>
+<a class="sourceLine" id="cb4-10" data-line-number="10">  <span class="kw">&lt;/topicmeta&gt;</span></a>
+<a class="sourceLine" id="cb4-11" data-line-number="11"></a>
+<a class="sourceLine" id="cb4-12" data-line-number="12">  <span class="kw">&lt;topicref</span><span class="ot"> href=</span><span class="st">&quot;introduction.dita&quot;</span><span class="kw">/&gt;</span></a>
+<a class="sourceLine" id="cb4-13" data-line-number="13">  <span class="kw">&lt;topicref</span><span class="ot"> href=</span><span class="st">&quot;topics_and_maps.dita&quot;</span><span class="kw">/&gt;</span></a>
+<a class="sourceLine" id="cb4-14" data-line-number="14">  <span class="kw">&lt;topicref</span><span class="ot"> href=</span><span class="st">&quot;topic.dita&quot;</span><span class="kw">&gt;</span></a>
+<a class="sourceLine" id="cb4-15" data-line-number="15">    <span class="kw">&lt;topicref</span><span class="ot"> href=</span><span class="st">&quot;topic_structure.dita&quot;</span><span class="kw">&gt;</span></a>
+<a class="sourceLine" id="cb4-16" data-line-number="16">      <span class="kw">&lt;topicref</span><span class="ot"> href=</span><span class="st">&quot;samples/sample_topic.dita&quot;</span><span class="ot"> toc=</span><span class="st">&quot;no&quot;</span><span class="kw">/&gt;</span></a>
+<a class="sourceLine" id="cb4-17" data-line-number="17">    <span class="kw">&lt;/topicref&gt;</span></a>
+<a class="sourceLine" id="cb4-18" data-line-number="18">    <span class="kw">&lt;topicref</span><span class="ot"> href=</span><span class="st">&quot;block_elements.dita&quot;</span><span class="kw">/&gt;</span></a>
+<a class="sourceLine" id="cb4-19" data-line-number="19">    <span class="kw">&lt;topicref</span><span class="ot"> href=</span><span class="st">&quot;inline_elements.dita&quot;</span><span class="kw">/&gt;</span></a>
+<a class="sourceLine" id="cb4-20" data-line-number="20">    <span class="kw">&lt;topicref</span><span class="ot"> href=</span><span class="st">&quot;link_elements.dita&quot;</span><span class="kw">/&gt;</span></a>
+<a class="sourceLine" id="cb4-21" data-line-number="21">  <span class="kw">&lt;/topicref&gt;</span></a>
+<a class="sourceLine" id="cb4-22" data-line-number="22">  .</a>
+<a class="sourceLine" id="cb4-23" data-line-number="23">  .</a>
+<a class="sourceLine" id="cb4-24" data-line-number="24">  .</a>
+<a class="sourceLine" id="cb4-25" data-line-number="25">  <span class="kw">&lt;topichead</span><span class="ot"> navtitle=</span><span class="st">&quot;Topic maps&quot;</span><span class="kw">&gt;</span></a>
+<a class="sourceLine" id="cb4-26" data-line-number="26">    <span class="kw">&lt;topicref</span><span class="ot"> href=</span><span class="st">&quot;map.dita&quot;</span><span class="kw">/&gt;</span></a>
+<a class="sourceLine" id="cb4-27" data-line-number="27">    <span class="kw">&lt;topicref</span><span class="ot"> href=</span><span class="st">&quot;bookmap.dita&quot;</span><span class="kw">/&gt;</span></a>
+<a class="sourceLine" id="cb4-28" data-line-number="28">  <span class="kw">&lt;/topichead&gt;</span></a>
+<a class="sourceLine" id="cb4-29" data-line-number="29">  <span class="kw">&lt;topicref</span><span class="ot"> href=</span><span class="st">&quot;conclusion.dita&quot;</span><span class="kw">/&gt;</span></a>
+<a class="sourceLine" id="cb4-30" data-line-number="30"><span class="kw">&lt;/map&gt;</span></a></code></pre></div>
 <p class="rights">
 Quelle: <a href="http://www.xmlmind.com/tutorials/DITA/" title="DITA for the Impatient">DITA for the Impatient</a>
 </p>
 </section><section id="publications-collections-publishing" class="slide level2">
-<h1>Publications, Collections, Publishing</h1>
+<h2>Publications, Collections, Publishing</h2>
 </section><section id="beispiele-für-publikationen" class="slide level2">
-<h1>Beispiele für Publikationen</h1>
+<h2>Beispiele für Publikationen</h2>
 <ul>
 <li class="fragment">Dokument</li>
 <li class="fragment">Website</li>
@@ -364,7 +391,7 @@ Quelle: <a href="http://www.xmlmind.com/tutorials/DITA/" title="DITA for the Imp
 <li class="fragment">Help-System</li>
 </ul>
 </section><section id="collections" class="slide level2">
-<h1>Collections</h1>
+<h2>Collections</h2>
 <blockquote>
 <p>The term collection is used to describe a potential publication in the DITA source. A ditamap collection is processed to become a publication. In other words, collection describes the source content, while publication describes the output format. A collection is defined in DITA through a ditamap, or multiple embedded ditamaps.</p>
 </blockquote>
@@ -372,7 +399,7 @@ Quelle: <a href="http://www.xmlmind.com/tutorials/DITA/" title="DITA for the Imp
 <a href="https://www.oxygenxml.com/dita/styleguide/webhelp-feedback/Artefact/Maps/c_Publication_Defined.html" title="Publication and collection defined">Publication and collection defined</a>
 </p>
 </section><section id="publishing" class="slide level2">
-<h1>Publishing</h1>
+<h2>Publishing</h2>
 <blockquote>
 <p>The process of transforming DITA source into an output format is known as publishing, processing, or transformation, and the software tools for the process are known as processors, transformers, or publishing engines.</p>
 </blockquote>
@@ -380,7 +407,7 @@ Quelle: <a href="http://www.xmlmind.com/tutorials/DITA/" title="DITA for the Imp
 <a href="https://www.oxygenxml.com/dita/styleguide/webhelp-feedback/Artefact/Maps/c_Publication_Defined.html" title="Publication and collection defined">Publication and collection defined</a>
 </p>
 </section><section id="variable-inhalte" class="slide level2">
-<h1>Variable Inhalte</h1>
+<h2>Variable Inhalte</h2>
 <p>Beispiele: <a href="https://www.oxygenxml.com/doc/versions/20.1/ug-editor/topics/eppo-variables.html">Working with Variable Text in DITA</a></p>
 <!--
 ## Zentralisiertes Management von Variablen
@@ -480,36 +507,36 @@ Quelle: <a href="http://www.xmlmind.com/tutorials/DITA/" title="DITA for the Imp
 
 -->
 </section><section id="spezialisierung" class="slide level2">
-<h1>Spezialisierung</h1>
+<h2>Spezialisierung</h2>
 <blockquote>
 <p>Specialization allows you to define new kinds of information (new structural types or new domains of information), while reusing as much of existing design and code as possible, and minimizing or eliminating the costs of interchange, migration, and maintenance.</p>
 </blockquote>
 <p class="rights">
 <a href="https://docs.oasis-open.org/dita/v1.0/archspec/specialize.html">What is specialization?</a>
 </p>
-</section><section class="slide level2">
-
+</section><section id="section-14" class="slide level2">
+<h2></h2>
 <p>Tutorial: <a href="http://www.xiruss.org/tutorials/dita-specialization/" title="DITA Configuration and Specialization Tutorials">DITA Configuration and Specialization Tutorials</a></p>
 </section></section>
-<section><section id="geschichte" class="titleslide slide level1"><h1>Geschichte</h1></section><section id="section-3" class="slide level2">
-<h1></h1>
+<section><section id="geschichte" class="title-slide slide level1"><h1>Geschichte</h1></section><section id="section-15" class="slide level2">
+<h2></h2>
 <p>März 2001: IBM stellt Kern-DTD und XML-Schema fertig</p>
 <p>Mai 2002: Zur Topic-Spezialisierung kommt die Domain-Spezialisierung</p>
 <p>2004 <a href="https://www.oasis-open.org/">OASIS</a> Technical Commitee</p>
 <p>Februar 2005: IBM übergibt das DITA Open Toolkit an Sourceforge</p>
-</section><section id="section-4" class="slide level2">
-<h1></h1>
+</section><section id="section-16" class="slide level2">
+<h2></h2>
 <p>Juni 2005: DITA 1.0</p>
 <p>August 2007: DITA 1.1 (neue Bookmap-Spezialisierung)</p>
 <p>2010: DITA 1.2 (Lernobjekte)</p>
 <p>17.12.2015: DITA 1.3 (Troubleshooting-Topic, Scoped Keys, MathML und Equation-Domains, Relax NG für normative Schemas)</p>
 <p>Material: <a href="http://dita-archive.xml.org/book/history-of-dita">History of DITA | DITA XML.org</a></p>
 </section></section>
-<section><section id="authoring-mit-adobe-framemaker" class="titleslide slide level1"><h1>Authoring mit Adobe Framemaker</h1></section><section id="video-framemaker-basics" class="slide level2">
-<h1>Video Framemaker Basics</h1>
-<p><a href="https://www.youtube.com/watch?v=FwqC8gbH_Xc"><img src="pics/framemaker_basics.png" style="width:60.0%" /></a></p>
+<section><section id="authoring-mit-adobe-framemaker" class="title-slide slide level1"><h1>Authoring mit Adobe Framemaker</h1></section><section id="video-framemaker-basics" class="slide level2">
+<h2>Video Framemaker Basics</h2>
+<p><a href="https://www.youtube.com/watch?v=FwqC8gbH_Xc"><img data-src="pics/framemaker_basics.png" style="width:60.0%" /></a></p>
 </section><section id="wichtig-zum-editieren-mit-xml" class="slide level2">
-<h1>Wichtig zum Editieren mit XML</h1>
+<h2>Wichtig zum Editieren mit XML</h2>
 <ul>
 <li>Workspaces</li>
 <li>Elementgrenzen</li>
@@ -518,16 +545,16 @@ Quelle: <a href="http://www.xmlmind.com/tutorials/DITA/" title="DITA for the Imp
 <li>Pods</li>
 </ul>
 </section><section id="editieren-eines-topics-vom-typ-concept" class="slide level2">
-<h1>Editieren eines Topics vom Typ &quot;Concept&quot;</h1>
-<p><a href="https://www.youtube.com/watch?v=9iKQ2WX6CnY"><img src="pics/concept_framemaker.png" style="width:60.0%" /></a></p>
+<h2>Editieren eines Topics vom Typ “Concept”</h2>
+<p><a href="https://www.youtube.com/watch?v=9iKQ2WX6CnY"><img data-src="pics/concept_framemaker.png" style="width:60.0%" /></a></p>
 </section><section id="erstellen-eines-topics-vom-typ-concept" class="slide level2">
-<h1>Erstellen eines Topics vom Typ &quot;Concept&quot;</h1>
-<p><a href="https://www.youtube.com/watch?v=SWQ9FVUiLWI"><img src="pics/create_concept_framemaker.png" style="width:60.0%" /></a></p>
+<h2>Erstellen eines Topics vom Typ “Concept”</h2>
+<p><a href="https://www.youtube.com/watch?v=SWQ9FVUiLWI"><img data-src="pics/create_concept_framemaker.png" style="width:60.0%" /></a></p>
 </section><section id="editieren-des-prologs-und-der-metadaten-eines-topic" class="slide level2">
-<h1>Editieren des Prologs und der Metadaten eines Topic</h1>
-<p><a href="https://www.youtube.com/watch?v=B8VeGvhPoA0"><img src="pics/framemaker_prologue.png" style="width:60.0%" /></a></p>
+<h2>Editieren des Prologs und der Metadaten eines Topic</h2>
+<p><a href="https://www.youtube.com/watch?v=B8VeGvhPoA0"><img data-src="pics/framemaker_prologue.png" style="width:60.0%" /></a></p>
 </section><section id="wichtige-weitere-punkte" class="slide level2">
-<h1>Wichtige weitere Punkte</h1>
+<h2>Wichtige weitere Punkte</h2>
 <ul>
 <li>Attributansicht durch Klicken rechts bei Element</li>
 <li>Attribut-Pad durch Doppelklicken</li>
@@ -536,11 +563,11 @@ Quelle: <a href="http://www.xmlmind.com/tutorials/DITA/" title="DITA for the Imp
 <li>Keywords</li>
 </ul>
 </section><section id="erstellen-eines-topics-vom-typ-task" class="slide level2">
-<h1>Erstellen eines Topics vom Typ &quot;Task&quot;</h1>
-<p><a href="https://www.youtube.com/watch?v=gZih-jZT8-Y"><img src="pics/task_framemaker.png" style="width:60.0%" /></a></p>
+<h2>Erstellen eines Topics vom Typ “Task”</h2>
+<p><a href="https://www.youtube.com/watch?v=gZih-jZT8-Y"><img data-src="pics/task_framemaker.png" style="width:60.0%" /></a></p>
 </section></section>
-<section><section id="anwendungen" class="titleslide slide level1"><h1>Anwendungen</h1></section><section id="optimale-umgebung-für-dita" class="slide level2">
-<h1>Optimale Umgebung für DITA</h1>
+<section><section id="anwendungen" class="title-slide slide level1"><h1>Anwendungen</h1></section><section id="optimale-umgebung-für-dita" class="slide level2">
+<h2>Optimale Umgebung für DITA</h2>
 <ul>
 <li>Topic-basierte, modulare Inhalte</li>
 <li>Wiederverwendung</li>
@@ -548,57 +575,55 @@ Quelle: <a href="http://www.xmlmind.com/tutorials/DITA/" title="DITA for the Imp
 <li>Übersetzung und Lokalisierung</li>
 </ul>
 <p class="rights">
-Sarah O'Keefe: <a href="https://www.youtube.com/watch?v=tBRyBYWGCqI">DITA 101 - YouTube</a>
+Sarah O’Keefe: <a href="https://www.youtube.com/watch?v=tBRyBYWGCqI">DITA 101 - YouTube</a>
 </p>
 </section><section id="wichtigste-business-cases" class="slide level2">
-<h1>Wichtigste Business Cases</h1>
+<h2>Wichtigste Business Cases</h2>
 <ul>
 <li>Lokalisierung</li>
 <li>Wiederverwendung von Inhalten</li>
 </ul>
 <p class="rights">
-Sarah O'Keefe: <a href="https://www.youtube.com/watch?v=tBRyBYWGCqI">DITA 101 - YouTube</a>
+Sarah O’Keefe: <a href="https://www.youtube.com/watch?v=tBRyBYWGCqI">DITA 101 - YouTube</a>
 </p>
 </section><section id="herausforderungen-für-autoren" class="slide level2">
-<h1>Herausforderungen für Autoren</h1>
+<h2>Herausforderungen für Autoren</h2>
 <ul>
 <li>Topic-orientiertes Schreiben</li>
 <li>Orientierung an wiederverwendbaren Inhalten</li>
 <li>Verständnis für technische Hintergründe</li>
 </ul>
 </section><section id="herausforderung-für-die-organisation" class="slide level2">
-<h1>Herausforderung für die Organisation</h1>
+<h2>Herausforderung für die Organisation</h2>
 <ul>
 <li>Technische Komplexität</li>
 <li>XML-Knowhow in der Organisation</li>
 <li>Realisisierung der Potenziale der Inhalte-Wiederverwendung</li>
 </ul>
 </section><section id="component-based-content-management-systems" class="slide level2">
-<h1>Component Based Content Management Systems</h1>
-</section><section class="slide level2">
-
+<h2>Component Based Content Management Systems</h2>
 <blockquote>
 <p>For the average CCM system, the content is created in smaller-than-page chunks, and assembled, much like a content mashup, to create a larger-sized page for output. A change is made to a component, which can be a single word, phrase, paragraph, or larger, which is then compiled, much like a software “build”, which generates a presentation version of the specified sources. The aggregated content can be pushed out to a Web page, a PDF, or a print destination.</p>
 </blockquote>
 <p class="rights">
 Rahel Bailie: <a href="http://intentionaldesign.ca/2009/09/11/component-content-management-as-content-mashup/" title="Component content management as content mash-ups | Intentional Design Inc.">Component content management as content mash-ups</a>
 </p>
-</section><section class="slide level2">
-
+</section><section id="section-17" class="slide level2">
+<h2></h2>
 <p><a href="http://www.ditawriter.com/list-of-dita-capable-cmses/" title="DITA CMSes – DITA Writer">DITA CMSes – DITA Writer</a></p>
 </section><section id="dita-in-firmen" class="slide level2">
-<h1>DITA in Firmen</h1>
+<h2>DITA in Firmen</h2>
 <p><a href="http://www.ditawriter.com/companies-using-dita/" title="Companies Using DITA – DITA Writer">Companies Using DITA – DITA Writer</a></p>
 </section><section id="beispiele" class="slide level2">
-<h1>Beispiele</h1>
+<h2>Beispiele</h2>
 <ul>
 <li><p>DITA-Dokumente: <a href="https://github.com/dita-community/dita-demo-content-collection" title="dita-community/dita-demo-content-collection: DITA Demonstration Content Collection">dita-community/dita-demo-content-collection: DITA Demonstration Content Collection</a>°°°°°</p></li>
 <li><p>DITA-basierte Website: <a href="http://www.thecontentera.com/live/php/viewpage.php?topic=home.dita" title="The Content Era is here">The Content Era is here</a></p></li>
 <li><p>DITA-basiertes CMS: <a href="http://intuillion.com/products/ditatoo/" title="DITA Content Management | DITAToo DITA CCMS: Your Easy Entry to DITA">DITAToo DITA CCMS</a></p></li>
 </ul>
 </section></section>
-<section><section id="aktuell" class="titleslide slide level1"><h1>Aktuell</h1></section><section id="lightweight-dita" class="slide level2">
-<h1>Lightweight DITA</h1>
+<section><section id="aktuell" class="title-slide slide level1"><h1>Aktuell</h1></section><section id="lightweight-dita" class="slide level2">
+<h2>Lightweight DITA</h2>
 <blockquote>
 <p>LwDITA will provide:</p>
 </blockquote>
@@ -611,163 +636,223 @@ Rahel Bailie: <a href="http://intentionaldesign.ca/2009/09/11/component-content-
 <a href="https://www.oasis-open.org/committees/tc_home.php?wg_abbrev=dita-lightweight-dita" title="Lightweight DITA SC | OASIS">Lightweight DITA SC | OASIS</a>
 </p>
 </section><section id="adobe-dita-world" class="slide level2">
-<h1>Adobe DITA World</h1>
+<h2>Adobe DITA World</h2>
 <p><a href="https://2018-adobe-dita-world.meetus.adobeevents.com/">Adobe DITA World 2018 – Home</a></p>
 </section></section>
-<section><section id="material" class="titleslide slide level1"><h1>Material</h1></section><section id="websites" class="slide level2">
-<h1>Websites:</h1>
+<section><section id="lightweight-dita-1" class="title-slide slide level1"><h1>Lightweight DITA</h1></section><section id="section-18" class="slide level2">
+<h2></h2>
+<blockquote>
+<p>Lightweight DITAis a simplified version of the Darwin Information Typing Architecture. In comparison to DITA 1.3, LwDITA has a smaller element and attribute set, stricter content models, and a reduced feature set. LwDITA also defines mappings between XML, HTML5, and Markdown.</p>
+</blockquote>
+</section><section id="beispiel-für-einen-topic-in-markdown" class="slide level2">
+<h2>Beispiel für einen Topic in Markdown</h2>
+<div class="sourceCode" id="cb5"><pre class="sourceCode markdown"><code class="sourceCode markdown"><a class="sourceLine" id="cb5-1" data-line-number="1"></a>
+<a class="sourceLine" id="cb5-2" data-line-number="2"></a>
+<a class="sourceLine" id="cb5-3" data-line-number="3"><span class="fu"># Installing and Setting up Remote Lighting</span></a>
+<a class="sourceLine" id="cb5-4" data-line-number="4"></a>
+<a class="sourceLine" id="cb5-5" data-line-number="5">Installation of your lighting kit includes installing the light bulbs into light fixtures, preparing the remote control, and programming lighting groups.</a>
+<a class="sourceLine" id="cb5-6" data-line-number="6"></a>
+<a class="sourceLine" id="cb5-7" data-line-number="7"><span class="fu">## Steps</span></a>
+<a class="sourceLine" id="cb5-8" data-line-number="8"></a>
+<a class="sourceLine" id="cb5-9" data-line-number="9">  1. Install light bulbs.</a>
+<a class="sourceLine" id="cb5-10" data-line-number="10">  2. Prepare remote control.</a>
+<a class="sourceLine" id="cb5-11" data-line-number="11">  3. Program lighting groups.</a>
+<a class="sourceLine" id="cb5-12" data-line-number="12"></a>
+<a class="sourceLine" id="cb5-13" data-line-number="13"><span class="fu">## Example</span></a>
+<a class="sourceLine" id="cb5-14" data-line-number="14"></a>
+<a class="sourceLine" id="cb5-15" data-line-number="15"> <span class="al">![Image](remote.png)</span></a></code></pre></div>
+<p>## Beispiel erweiterter Topic mit YAML Header</p>
+<div class="sourceCode" id="cb6"><pre class="sourceCode markdown"><code class="sourceCode markdown"><a class="sourceLine" id="cb6-1" data-line-number="1"></a>
+<a class="sourceLine" id="cb6-2" data-line-number="2">---</a>
+<a class="sourceLine" id="cb6-3" data-line-number="3">id: install-and-setup</a>
+<a class="sourceLine" id="cb6-4" data-line-number="4">author: Kevin Lewis</a>
+<a class="sourceLine" id="cb6-5" data-line-number="5">---</a>
+<a class="sourceLine" id="cb6-6" data-line-number="6"></a>
+<a class="sourceLine" id="cb6-7" data-line-number="7"><span class="fu"># Installing and Setting up Remote Lighting</span></a>
+<a class="sourceLine" id="cb6-8" data-line-number="8"></a>
+<a class="sourceLine" id="cb6-9" data-line-number="9">Installation of your lighting kit includes installing the light bulbs into light fixtures, preparing the remote control, and programming lighting groups.</a>
+<a class="sourceLine" id="cb6-10" data-line-number="10"></a>
+<a class="sourceLine" id="cb6-11" data-line-number="11">Before you attempt to install your lighting kit, please turn off the power in your electrical circuit panel,</a>
+<a class="sourceLine" id="cb6-12" data-line-number="12"></a>
+<a class="sourceLine" id="cb6-13" data-line-number="13"><span class="fu">## Steps</span></a>
+<a class="sourceLine" id="cb6-14" data-line-number="14"></a>
+<a class="sourceLine" id="cb6-15" data-line-number="15">  1. Install light bulbs.</a>
+<a class="sourceLine" id="cb6-16" data-line-number="16">  2. Prepare remote control.</a>
+<a class="sourceLine" id="cb6-17" data-line-number="17">  3. Program lighting groups.</a>
+<a class="sourceLine" id="cb6-18" data-line-number="18"></a>
+<a class="sourceLine" id="cb6-19" data-line-number="19"><span class="fu">## Example</span></a>
+<a class="sourceLine" id="cb6-20" data-line-number="20"></a>
+<a class="sourceLine" id="cb6-21" data-line-number="21">The following video demonstrates a recommended installation:</a>
+<a class="sourceLine" id="cb6-22" data-line-number="22"></a>
+<a class="sourceLine" id="cb6-23" data-line-number="23">&lt;video src=&quot;remote.mp4&quot; controls poster=&quot;remote.png&quot; /&gt;</a></code></pre></div>
+</section><section id="beispiel-für-eine-map-in-markdown" class="slide level2">
+<h2>Beispiel für eine Map in Markdown</h2>
+<div class="sourceCode" id="cb7"><pre class="sourceCode markdown"><code class="sourceCode markdown"><a class="sourceLine" id="cb7-1" data-line-number="1"><span class="fu"># Remote Lighting Network</span></a>
+<a class="sourceLine" id="cb7-2" data-line-number="2"></a>
+<a class="sourceLine" id="cb7-3" data-line-number="3">   - <span class="ot">[Introduction](introduction.md)</span></a>
+<a class="sourceLine" id="cb7-4" data-line-number="4">   - <span class="ot">[Alternative lighting setups](alternatives.md)</span></a>
+<a class="sourceLine" id="cb7-5" data-line-number="5"><span class="bn">       - [Low power installation](low-power.md)</span></a>
+<a class="sourceLine" id="cb7-6" data-line-number="6"><span class="bn">       - [High power installation](high-power.md)</span></a></code></pre></div>
+</section><section id="material" class="slide level2">
+<h2>Material</h2>
+<p><a href="http://docs.oasis-open.org/dita/LwDITA/v1.0/cnprd01/LwDITA-v1.0-cnprd01.html#example-of-an-mdita-map">Lightweight DITA: An Introduction</a></p>
+<p><a href="https://www.dita-ot.org/dev/topics/markdown-dita-syntax-reference.html">Markdown DITA syntax reference</a></p>
+<p><a href="https://www.ixiasoft.com/lightweight-dita-and-dita-2/">Lightweight DITA and DITA 2.0 - DITA Now and in the Future - IXIASOFT</a></p>
+<p><a href="https://infotexture.net/2015/04/dita-ot-markdown-plugin/">Marking Down DITA · infotexture</a></p>
+</section></section>
+<section><section id="material-1" class="title-slide slide level1"><h1>Material</h1></section><section id="websites" class="slide level2">
+<h2>Websites:</h2>
 <blockquote>
 <p>DITA XML.org is the official community gathering place and information resource for the DITA OASIS Standard, an XML architecture for designing, writing, managing, and publishing information. We encourage you to contribute content to this site.</p>
 </blockquote>
 <p><a href="http://dita.xml.org/" title="DITA XML.org | Online community for the Darwin Information Typing Architecture OASIS Standard">DITA XML.org | Online community for the Darwin Information Typing Architecture OASIS Standard</a></p>
 </section><section id="einführungen" class="slide level2">
-<h1>Einführungen</h1>
+<h2>Einführungen</h2>
 <p><a href="https://www.youtube.com/watch?v=ngHIIWbEp_Q">DITA 101 webcast - YouTube</a></p>
 <p><a href="https://www.data2type.de/xml-xslt-xslfo/dita/" title="data2type GmbH: XML-Technologien | DITA">data2type GmbH: XML-Technologien | DITA</a></p>
 <p><a href="https://www.learningdita.de/" title="DITA lernen">DITA lernen</a></p>
 </section><section id="code-beispiele" class="slide level2">
-<h1>Code-Beispiele</h1>
-<p><a href="https://github.com/gnostyx/dita-demo-content-collection">&quot;Gnostyx&quot; - DITA Demonstration Content Collection</a></p>
+<h2>Code-Beispiele</h2>
+<p><a href="https://github.com/gnostyx/dita-demo-content-collection">“Gnostyx” - DITA Demonstration Content Collection</a></p>
 <p>Siehe dazu: <a href="http://www.ditawriter.com/thunderbird-a-sample-dita-documentation-set-to-play-with/">ThunderBird: A Sample DITA Documentation Set to Play With – DITA Writer</a></p>
 </section><section id="videos" class="slide level2">
-<h1>Videos</h1>
+<h2>Videos</h2>
 <p><a href="http://www.ditawriter.com/list-of-dita-related-videos/" title="List of DITA-related Videos – DITA Writer">List of DITA-related Videos – DITA Writer</a></p>
 </section><section id="blogs" class="slide level2">
-<h1>Blogs</h1>
+<h2>Blogs</h2>
 <p><a href="http://www.ditawriter.com/" title="DITA Writer – Blog, Resource, Interviews and News Relating to DITA XML">DITA Writer – Blog, Resource, Interviews and News Relating to DITA XML</a></p>
 <p><a href="http://everypageispageone.com/" title="Every Page is Page One">Every Page is Page One</a></p>
 <p><a href="https://www.learningdita.com/blog/" title="Blog">Learning DITA Blog</a></p>
 </section><section id="editoren" class="slide level2">
-<h1>Editoren:</h1>
+<h2>Editoren:</h2>
 <p><a href="http://www.ditawriter.com/list-of-dita-optimized-editors/" title="List of DITA Optimized Editors – DITA Writer">List of DITA Optimized Editors – DITA Writer</a></p>
 <ul>
 <li><a href="https://www.oxygenxml.com/" title="XML Editor">Oxygen XML Editor</a></li>
-<li><a href="http://idratherbewriting.com/2016/03/30/xeditor-xml-editor-for-your-cms-or-ccms/" title="Xeditor, a CMS editor for XML content | I&#39;d Rather Be Writing">Xeditor, a CMS editor for XML content | I'd Rather Be Writing</a></li>
+<li><a href="http://idratherbewriting.com/2016/03/30/xeditor-xml-editor-for-your-cms-or-ccms/" title="Xeditor, a CMS editor for XML content | I&#39;d Rather Be Writing">Xeditor, a CMS editor for XML content | I’d Rather Be Writing</a></li>
 <li>Freie Personal Edition: <a href="http://www.xmlmind.com/xmleditor/dita_editor.html" title="XMLmind XML Editor: XMLmind DITA Editor">XMLmind XML Editor: XMLmind DITA Editor</a></li>
 </ul>
 </section><section id="texte" class="slide level2">
-<h1>Texte</h1>
+<h2>Texte</h2>
 <p><a href="https://www.oxygenxml.com/forum/topic6637.html" title="Step by step process to create new DITA project - Oxygen XML Forum">Step by step process to create new DITA project - Oxygen XML Forum</a></p>
 <p><a href="https://www.oxygenxml.com/xml_editor/dita_maps_manager.html" title="DITA Maps Manager - Oxygen XML Editor">DITA Maps Manager - Oxygen XML Editor</a></p>
 <p><a href="https://www.oxygenxml.com/doc/versions/19.0/ug-editor/topics/eppo-pathfinder-reuse.html" title="Reusing DITA Content">Reusing DITA Content</a></p>
-<p><a href="http://idratherbewriting.com/2015/01/28/10-reasons-for-moving-away-from-dita/" title="10 reasons for moving away from DITA | I&#39;d Rather Be Writing">10 reasons for moving away from DITA | I'd Rather Be Writing</a></p>
+<p><a href="http://idratherbewriting.com/2015/01/28/10-reasons-for-moving-away-from-dita/" title="10 reasons for moving away from DITA | I&#39;d Rather Be Writing">10 reasons for moving away from DITA | I’d Rather Be Writing</a></p>
 </section><section id="tools" class="slide level2">
-<h1>Tools</h1>
+<h2>Tools</h2>
 <ul>
 <li><p><a href="http://www.xmlmind.com/ditac/what_is_ditac.html" title="XMLmind DITA Converter: XMLmind DITA Converter">XMLmind DITA Converter</a></p></li>
 <li><p><a href="http://www.dita-ot.org/" title="DITA Open Toolkit">DITA Open Toolkit</a></p></li>
 </ul>
 </section><section id="gruppen-und-listen" class="slide level2">
-<h1>Gruppen und Listen</h1>
+<h2>Gruppen und Listen</h2>
 <p>DITA Awareness Group: <a href="https://www.linkedin.com/groups/162465/" class="uri">https://www.linkedin.com/groups/162465/</a> DITA for Small Teams: <a href="https://www.linkedin.com/groups/3968768/" class="uri">https://www.linkedin.com/groups/3968768/</a> DITA Metrics (for effort estimation and ROI calculations): <a href="https://www.linkedin.com/groups/2916249/" class="uri">https://www.linkedin.com/groups/2916249/</a></p>
 </section><section id="sammlung-von-dita-links-heinz-wittenbrink" class="slide level2">
-<h1>Sammlung von DITA Links (Heinz Wittenbrink)</h1>
-<p><a href="https://www.pinboard.in/u:heinzwittenbrink/t:DITA/" title="Pinboard: bookmarks for heinzwittenbrink tagged &#39;dita&#39;">Pinboard: bookmarks for heinzwittenbrink tagged 'dita'</a></p>
+<h2>Sammlung von DITA Links (Heinz Wittenbrink)</h2>
+<p><a href="https://www.pinboard.in/u:heinzwittenbrink/t:DITA/" title="Pinboard: bookmarks for heinzwittenbrink tagged &#39;dita&#39;">Pinboard: bookmarks for heinzwittenbrink tagged ‘dita’</a></p>
 </section></section>
-<section><section id="dita-open-toolkit" class="titleslide slide level1"><h1>DITA Open Toolkit</h1></section><section id="überprüfung-java" class="slide level2">
-<h1>Überprüfung Java</h1>
+<section><section id="dita-open-toolkit" class="title-slide slide level1"><h1>DITA Open Toolkit</h1></section><section id="überprüfung-java" class="slide level2">
+<h2>Überprüfung Java</h2>
 <pre class="shell"><code>Last login: Fri Nov 10 10:47:09 on ttys005
 M00087-3:~ heinz$ javac -version
 javac 1.8.0_131
 M00087-3:~ heinz$</code></pre>
 </section><section id="download" class="slide level2">
-<h1>Download</h1>
+<h2>Download</h2>
 <p><a href="http://www.dita-ot.org/download" title="Download DITA-OT">Download DITA-OT</a></p>
 </section><section id="edit-path" class="slide level2">
-<h1>Edit PATH</h1>
+<h2>Edit PATH</h2>
 <pre class="shell"><code>M00087-3:~ heinz$ echo $PATH
 /Users/heinz/DITA/dita-ot-3.0/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin:/Library/TeX/texbin</code></pre>
 </section><section id="check-the-version" class="slide level2">
-<h1>Check the version</h1>
+<h2>Check the version</h2>
 <pre class="shell"><code>M00087-3:~ heinz$ dita --version
 DITA-OT version 3.0
 M00087-3:~ heinz$</code></pre>
 </section><section id="erster-test" class="slide level2">
-<h1>Erster Test</h1>
+<h2>Erster Test</h2>
 <pre class="shell"><code>M00087-3:samples heinz$ dita --input=sequence.ditamap --format=html5 --output=output/sequence
      [xslt] Warning at xsl:stylesheet on line 12 column 59 of map2html5Impl.xsl:
      [xslt]   Stylesheet module plugin:org.dita.html5:xsl/map2html5Impl.xsl is included or imported more
      [xslt]   than once. This is permitted, but may lead to errors or unexpected behavior</code></pre>
 </section><section id="input" class="slide level2">
-<h1>Input</h1>
-<div class="sourceCode"><pre class="sourceCode xml"><code class="sourceCode xml"><span class="kw">&lt;?xml</span> version=&quot;1.0&quot; encoding=&quot;utf-8&quot;<span class="kw">?&gt;</span>
-<span class="dt">&lt;!DOCTYPE </span>map PUBLIC &quot;-//OASIS//DTD DITA Map//EN&quot;
- &quot;../dtd/technicalContent/dtd/map.dtd&quot;<span class="dt">&gt;</span>
-<span class="co">&lt;!-- This file is part of the DITA Open Toolkit project hosted on</span>
-<span class="co">     Sourceforge.net. See the accompanying license.txt file for</span>
-<span class="co">     applicable licenses.--&gt;</span>
-<span class="co">&lt;!-- (C) Copyright IBM Corporation 2001, 2005. All Rights Reserved.</span>
-<span class="co"> *--&gt;</span>
-<span class="kw">&lt;map</span><span class="ot"> title=</span><span class="st">&quot;Working in the garage&quot;</span><span class="kw">&gt;</span>
-<span class="kw">&lt;topicref</span><span class="ot"> href=</span><span class="st">&quot;tasks/changingtheoil.xml&quot;</span><span class="ot"> type=</span><span class="st">&quot;task&quot;</span><span class="kw">&gt;&lt;/topicref&gt;</span>
-<span class="kw">&lt;topicref</span><span class="ot"> href=</span><span class="st">&quot;tasks/organizing.xml&quot;</span><span class="ot"> type=</span><span class="st">&quot;task&quot;</span><span class="kw">&gt;&lt;/topicref&gt;</span>
-<span class="kw">&lt;topicref</span><span class="ot"> href=</span><span class="st">&quot;tasks/shovellingsnow.xml&quot;</span><span class="ot"> type=</span><span class="st">&quot;task&quot;</span><span class="kw">&gt;&lt;/topicref&gt;</span>
-<span class="kw">&lt;topicref</span><span class="ot"> href=</span><span class="st">&quot;tasks/spraypainting.xml&quot;</span><span class="ot"> type=</span><span class="st">&quot;task&quot;</span><span class="kw">&gt;&lt;/topicref&gt;</span>
-<span class="kw">&lt;topicref</span><span class="ot"> href=</span><span class="st">&quot;tasks/takinggarbage.xml&quot;</span><span class="ot"> type=</span><span class="st">&quot;task&quot;</span><span class="kw">&gt;&lt;/topicref&gt;</span>
-<span class="kw">&lt;topicref</span><span class="ot"> href=</span><span class="st">&quot;tasks/washingthecar.xml&quot;</span><span class="ot"> type=</span><span class="st">&quot;task&quot;</span><span class="kw">&gt;&lt;/topicref&gt;</span>
-<span class="kw">&lt;topicref</span><span class="ot"> href=</span><span class="st">&quot;concepts/lawnmower.xml&quot;</span><span class="ot"> type=</span><span class="st">&quot;concept&quot;</span><span class="kw">&gt;&lt;/topicref&gt;</span>
-<span class="kw">&lt;topicref</span><span class="ot"> href=</span><span class="st">&quot;concepts/oil.xml&quot;</span><span class="ot"> type=</span><span class="st">&quot;concept&quot;</span><span class="kw">&gt;&lt;/topicref&gt;</span>
-<span class="kw">&lt;topicref</span><span class="ot"> href=</span><span class="st">&quot;concepts/paint.xml&quot;</span><span class="ot"> type=</span><span class="st">&quot;concept&quot;</span><span class="kw">&gt;&lt;/topicref&gt;</span>
-<span class="kw">&lt;topicref</span><span class="ot"> href=</span><span class="st">&quot;concepts/shelving.xml&quot;</span><span class="ot"> type=</span><span class="st">&quot;concept&quot;</span><span class="kw">&gt;&lt;/topicref&gt;</span>
-<span class="kw">&lt;topicref</span><span class="ot"> href=</span><span class="st">&quot;concepts/snowshovel.xml&quot;</span><span class="ot"> type=</span><span class="st">&quot;concept&quot;</span><span class="kw">&gt;&lt;/topicref&gt;</span>
-<span class="kw">&lt;topicref</span><span class="ot"> href=</span><span class="st">&quot;concepts/toolbox.xml&quot;</span><span class="ot"> type=</span><span class="st">&quot;concept&quot;</span><span class="kw">&gt;&lt;/topicref&gt;</span>
-<span class="kw">&lt;topicref</span><span class="ot"> href=</span><span class="st">&quot;concepts/tools.xml&quot;</span><span class="ot"> type=</span><span class="st">&quot;concept&quot;</span><span class="kw">&gt;&lt;/topicref&gt;</span>
-<span class="kw">&lt;topicref</span><span class="ot"> href=</span><span class="st">&quot;concepts/waterhose.xml&quot;</span><span class="ot"> type=</span><span class="st">&quot;concept&quot;</span><span class="kw">&gt;&lt;/topicref&gt;</span>
-<span class="kw">&lt;topicref</span><span class="ot"> href=</span><span class="st">&quot;concepts/wheelbarrow.xml&quot;</span><span class="ot"> type=</span><span class="st">&quot;concept&quot;</span><span class="kw">&gt;&lt;/topicref&gt;</span>
-<span class="kw">&lt;topicref</span><span class="ot"> href=</span><span class="st">&quot;concepts/workbench.xml&quot;</span><span class="ot"> type=</span><span class="st">&quot;concept&quot;</span><span class="kw">&gt;&lt;/topicref&gt;</span>
-<span class="kw">&lt;topicref</span><span class="ot"> href=</span><span class="st">&quot;concepts/wwfluid.xml&quot;</span><span class="ot"> type=</span><span class="st">&quot;concept&quot;</span><span class="kw">&gt;&lt;/topicref&gt;</span>
-<span class="kw">&lt;/map&gt;</span></code></pre></div>
+<h2>Input</h2>
+<div class="sourceCode" id="cb12"><pre class="sourceCode xml"><code class="sourceCode xml"><a class="sourceLine" id="cb12-1" data-line-number="1"><span class="kw">&lt;?xml</span> version=&quot;1.0&quot; encoding=&quot;utf-8&quot;<span class="kw">?&gt;</span></a>
+<a class="sourceLine" id="cb12-2" data-line-number="2"><span class="dt">&lt;!DOCTYPE </span>map PUBLIC &quot;-//OASIS//DTD DITA Map//EN&quot;</a>
+<a class="sourceLine" id="cb12-3" data-line-number="3"> &quot;../dtd/technicalContent/dtd/map.dtd&quot;<span class="dt">&gt;</span></a>
+<a class="sourceLine" id="cb12-4" data-line-number="4"><span class="co">&lt;!-- This file is part of the DITA Open Toolkit project hosted on</span></a>
+<a class="sourceLine" id="cb12-5" data-line-number="5"><span class="co">     Sourceforge.net. See the accompanying license.txt file for</span></a>
+<a class="sourceLine" id="cb12-6" data-line-number="6"><span class="co">     applicable licenses.--&gt;</span></a>
+<a class="sourceLine" id="cb12-7" data-line-number="7"><span class="co">&lt;!-- (C) Copyright IBM Corporation 2001, 2005. All Rights Reserved.</span></a>
+<a class="sourceLine" id="cb12-8" data-line-number="8"><span class="co"> *--&gt;</span></a>
+<a class="sourceLine" id="cb12-9" data-line-number="9"><span class="kw">&lt;map</span><span class="ot"> title=</span><span class="st">&quot;Working in the garage&quot;</span><span class="kw">&gt;</span></a>
+<a class="sourceLine" id="cb12-10" data-line-number="10"><span class="kw">&lt;topicref</span><span class="ot"> href=</span><span class="st">&quot;tasks/changingtheoil.xml&quot;</span><span class="ot"> type=</span><span class="st">&quot;task&quot;</span><span class="kw">&gt;&lt;/topicref&gt;</span></a>
+<a class="sourceLine" id="cb12-11" data-line-number="11"><span class="kw">&lt;topicref</span><span class="ot"> href=</span><span class="st">&quot;tasks/organizing.xml&quot;</span><span class="ot"> type=</span><span class="st">&quot;task&quot;</span><span class="kw">&gt;&lt;/topicref&gt;</span></a>
+<a class="sourceLine" id="cb12-12" data-line-number="12"><span class="kw">&lt;topicref</span><span class="ot"> href=</span><span class="st">&quot;tasks/shovellingsnow.xml&quot;</span><span class="ot"> type=</span><span class="st">&quot;task&quot;</span><span class="kw">&gt;&lt;/topicref&gt;</span></a>
+<a class="sourceLine" id="cb12-13" data-line-number="13"><span class="kw">&lt;topicref</span><span class="ot"> href=</span><span class="st">&quot;tasks/spraypainting.xml&quot;</span><span class="ot"> type=</span><span class="st">&quot;task&quot;</span><span class="kw">&gt;&lt;/topicref&gt;</span></a>
+<a class="sourceLine" id="cb12-14" data-line-number="14"><span class="kw">&lt;topicref</span><span class="ot"> href=</span><span class="st">&quot;tasks/takinggarbage.xml&quot;</span><span class="ot"> type=</span><span class="st">&quot;task&quot;</span><span class="kw">&gt;&lt;/topicref&gt;</span></a>
+<a class="sourceLine" id="cb12-15" data-line-number="15"><span class="kw">&lt;topicref</span><span class="ot"> href=</span><span class="st">&quot;tasks/washingthecar.xml&quot;</span><span class="ot"> type=</span><span class="st">&quot;task&quot;</span><span class="kw">&gt;&lt;/topicref&gt;</span></a>
+<a class="sourceLine" id="cb12-16" data-line-number="16"><span class="kw">&lt;topicref</span><span class="ot"> href=</span><span class="st">&quot;concepts/lawnmower.xml&quot;</span><span class="ot"> type=</span><span class="st">&quot;concept&quot;</span><span class="kw">&gt;&lt;/topicref&gt;</span></a>
+<a class="sourceLine" id="cb12-17" data-line-number="17"><span class="kw">&lt;topicref</span><span class="ot"> href=</span><span class="st">&quot;concepts/oil.xml&quot;</span><span class="ot"> type=</span><span class="st">&quot;concept&quot;</span><span class="kw">&gt;&lt;/topicref&gt;</span></a>
+<a class="sourceLine" id="cb12-18" data-line-number="18"><span class="kw">&lt;topicref</span><span class="ot"> href=</span><span class="st">&quot;concepts/paint.xml&quot;</span><span class="ot"> type=</span><span class="st">&quot;concept&quot;</span><span class="kw">&gt;&lt;/topicref&gt;</span></a>
+<a class="sourceLine" id="cb12-19" data-line-number="19"><span class="kw">&lt;topicref</span><span class="ot"> href=</span><span class="st">&quot;concepts/shelving.xml&quot;</span><span class="ot"> type=</span><span class="st">&quot;concept&quot;</span><span class="kw">&gt;&lt;/topicref&gt;</span></a>
+<a class="sourceLine" id="cb12-20" data-line-number="20"><span class="kw">&lt;topicref</span><span class="ot"> href=</span><span class="st">&quot;concepts/snowshovel.xml&quot;</span><span class="ot"> type=</span><span class="st">&quot;concept&quot;</span><span class="kw">&gt;&lt;/topicref&gt;</span></a>
+<a class="sourceLine" id="cb12-21" data-line-number="21"><span class="kw">&lt;topicref</span><span class="ot"> href=</span><span class="st">&quot;concepts/toolbox.xml&quot;</span><span class="ot"> type=</span><span class="st">&quot;concept&quot;</span><span class="kw">&gt;&lt;/topicref&gt;</span></a>
+<a class="sourceLine" id="cb12-22" data-line-number="22"><span class="kw">&lt;topicref</span><span class="ot"> href=</span><span class="st">&quot;concepts/tools.xml&quot;</span><span class="ot"> type=</span><span class="st">&quot;concept&quot;</span><span class="kw">&gt;&lt;/topicref&gt;</span></a>
+<a class="sourceLine" id="cb12-23" data-line-number="23"><span class="kw">&lt;topicref</span><span class="ot"> href=</span><span class="st">&quot;concepts/waterhose.xml&quot;</span><span class="ot"> type=</span><span class="st">&quot;concept&quot;</span><span class="kw">&gt;&lt;/topicref&gt;</span></a>
+<a class="sourceLine" id="cb12-24" data-line-number="24"><span class="kw">&lt;topicref</span><span class="ot"> href=</span><span class="st">&quot;concepts/wheelbarrow.xml&quot;</span><span class="ot"> type=</span><span class="st">&quot;concept&quot;</span><span class="kw">&gt;&lt;/topicref&gt;</span></a>
+<a class="sourceLine" id="cb12-25" data-line-number="25"><span class="kw">&lt;topicref</span><span class="ot"> href=</span><span class="st">&quot;concepts/workbench.xml&quot;</span><span class="ot"> type=</span><span class="st">&quot;concept&quot;</span><span class="kw">&gt;&lt;/topicref&gt;</span></a>
+<a class="sourceLine" id="cb12-26" data-line-number="26"><span class="kw">&lt;topicref</span><span class="ot"> href=</span><span class="st">&quot;concepts/wwfluid.xml&quot;</span><span class="ot"> type=</span><span class="st">&quot;concept&quot;</span><span class="kw">&gt;&lt;/topicref&gt;</span></a>
+<a class="sourceLine" id="cb12-27" data-line-number="27"><span class="kw">&lt;/map&gt;</span></a></code></pre></div>
 </section></section>
-<section><section id="exkurs-output-erzeugung-mit-xsl-fo" class="titleslide slide level1"><h1>Exkurs: Output-Erzeugung mit XSL-FO</h1></section><section id="apache-fop" class="slide level2">
-<h1>Apache FOP</h1>
+<section><section id="exkurs-output-erzeugung-mit-xsl-fo" class="title-slide slide level1"><h1>Exkurs: Output-Erzeugung mit XSL-FO</h1></section><section id="apache-fop" class="slide level2">
+<h2>Apache FOP</h2>
 <p><a href="https://xmlgraphics.apache.org/fop/quickstartguide.html" title="Apache(tm) FOP: Quick Start Guide">Apache(tm) FOP: Quick Start Guide</a></p>
-</section><section class="slide level2">
-
+</section><section id="section-19" class="slide level2">
+<h2></h2>
 <figure>
-<img src="https://upload.wikimedia.org/wikipedia/commons/5/58/XSL-FO.png" title="File:XSL-FO.png - Wikimedia Commons" alt="XSL-FO-Processing" /><figcaption>XSL-FO-Processing</figcaption>
+<img data-src="https://upload.wikimedia.org/wikipedia/commons/5/58/XSL-FO.png" title="File:XSL-FO.png - Wikimedia Commons" alt="XSL-FO-Processing" /><figcaption>XSL-FO-Processing</figcaption>
 </figure>
 <p><small style="font-size:x-small">Quelle: <a href="https://commons.wikimedia.org/wiki/File:XSL-FO.png" title="File:XSL-FO.png - Wikimedia Commons">File:XSL-FO.png - Wikimedia Commons</a></small></p>
-<p><a href="https://opendatacommons.org/licenses/pddl/"><img src="https://img.shields.io/badge/License-PDDL-brightgreen.svg" alt="License: ODbL" /></a></p>
-</section><section class="slide level2">
-
+<p><a href="https://opendatacommons.org/licenses/pddl/"><img data-src="https://img.shields.io/badge/License-PDDL-brightgreen.svg" alt="License: ODbL" /></a></p>
+</section><section id="section-20" class="slide level2">
+<h2></h2>
 <ul>
 <li>URL dieser Präsentation: <a href="https://heinzwittenbrink.github.io/slides-intro2dita/" class="uri">https://heinzwittenbrink.github.io/slides-intro2dita/</a></li>
 <li>Präsentation auf Github: <a href="https://github.com/heinzwittenbrink/slides-intro2dita" class="uri">https://github.com/heinzwittenbrink/slides-intro2dita</a></li>
 </ul>
-</section><section class="slide level2">
-
+</section><section id="section-21" class="slide level2">
+<h2></h2>
 <p>Dank an <a href="https://twitter.com/lief_erickson">Lief Erickson</a> für wertvollen Input!</p>
 </section><section id="weitere-präsentationen-zu-dita" class="slide level2">
-<h1>Weitere Präsentationen zu DITA</h1>
+<h2>Weitere Präsentationen zu DITA</h2>
 <p><a href="conditional_publishing.html">Bedingtes Publizieren mit DITA</a></p>
 </section><section id="vielen-dank" class="slide level2">
-<h1>Vielen Dank!</h1>
-</section><section class="slide level2">
-
+<h2>Vielen Dank!</h2>
+</section><section id="section-22" class="slide level2">
+<h2></h2>
 <p><a href="https://twitter.com/heinz?lang=de" title="Heinz Wittenbrink (@heinz) | Twitter">@heinz</a></p>
 <p>heinz at fh-joanneum dot at</p>
-<p><a href="https://creativecommons.org/licenses/by-sa/4.0/"><img src="https://img.shields.io/badge/License-CC%20BY--SA%204.0-lightgrey.svg" alt="License: CC BY-SA 4.0" /></a></p>
-<div id="refs" class="references">
-
-</div>
+<p><a href="https://creativecommons.org/licenses/by-sa/4.0/"><img data-src="https://img.shields.io/badge/License-CC%20BY--SA%204.0-lightgrey.svg" alt="License: CC BY-SA 4.0" /></a></p>
 </section></section>
     </div>
   </div>
 
-  <script src="reveal.js/lib/js/head.min.js"></script>
-  <script src="reveal.js/js/reveal.js"></script>
+  <script src="https://revealjs.com/lib/js/head.min.js"></script>
+  <script src="https://revealjs.com/js/reveal.js"></script>
 
   <script>
 
       // Full list of configuration options available at:
       // https://github.com/hakimel/reveal.js#configuration
       Reveal.initialize({
+        // Push each slide change to the browser history
+        history: true,
 
         // Optional reveal.js plugins
         dependencies: [
-          { src: 'reveal.js/lib/js/classList.js', condition: function() { return !document.body.classList; } },
-          { src: 'reveal.js/plugin/zoom-js/zoom.js', async: true },
-          { src: 'reveal.js/plugin/notes/notes.js', async: true }
+          { src: 'https://revealjs.com/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+          { src: 'https://revealjs.com/plugin/zoom-js/zoom.js', async: true },
+          { src: 'https://revealjs.com/plugin/notes/notes.js', async: true }
         ]
       });
     </script>
