@@ -576,7 +576,6 @@ Material: [History of DITA | DITA XML.org](http://dita-archive.xml.org/book/hist
 
 ```markdown
 
-
 # Installing and Setting up Remote Lighting
 
 Installation of your lighting kit includes installing the light bulbs into light fixtures, preparing the remote control, and programming lighting groups.
@@ -590,19 +589,18 @@ Installation of your lighting kit includes installing the light bulbs into light
 ## Example
 
  ![Image](remote.png)
+```
 
- ```
+## Beispiel erweiterter Topic mit YAML Header
 
- ## Beispiel erweiterter Topic mit YAML Header
-
- ```markdown
+```markdown
 
  ---
  id: install-and-setup
  author: Kevin Lewis
  ---
 
- # Installing and Setting up Remote Lighting
+# Installing and Setting up Remote Lighting
 
  Installation of your lighting kit includes installing the light bulbs into light fixtures, preparing the remote control, and programming lighting groups.
 
@@ -620,7 +618,7 @@ Installation of your lighting kit includes installing the light bulbs into light
 
  <video src="remote.mp4" controls poster="remote.png" />
 
- ```
+```
 
 
 ## Beispiel für eine Map in Markdown
