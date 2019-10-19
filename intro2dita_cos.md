@@ -4,9 +4,11 @@ author: Heinz Wittenbrink
 date: 2018-10-06
 ---
 
+#
 
 ##{data-background = "https://www.dita-ot.org/images/dita-logo.png" data-background-size="contain"}
 
+##
 ---
 
 <p class="rights">Bild: <https://www.dita-ot.org/> </p>
