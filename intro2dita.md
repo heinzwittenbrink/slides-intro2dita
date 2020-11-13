@@ -1,7 +1,10 @@
 ---
 title: DITA-Einführung
 author: Heinz Wittenbrink
-date: 2018-10-06
+date: 2020-11-14
+bibliography: intro2dita.bib
+csl: apa.csl
+link-citations: true
 ---
 
 # Intro
