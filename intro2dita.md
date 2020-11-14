@@ -567,7 +567,7 @@ Material: [History of DITA | DITA XML.org](http://dita-archive.xml.org/book/hist
 
 ## Adobe DITA World
 
-[Adobe DITA World 2018 – Home](https://2018-adobe-dita-world.meetus.adobeevents.com/)
+[Adobe DITAWORLD 2020](https://2020-adobe-dita-world.meetus.adobeevents.com/ "Adobe DITAWORLD 2020 - Adobe DITAWORLD 2020 – The DITA Online Conference | Session recordings available now")
 
 # Lightweight DITA
 
