@@ -127,7 +127,7 @@ Quelle: [The Information Mapping® Method - Information Mapping](https://www.inf
 
 ![](https://upload.wikimedia.org/wikipedia/commons/thumb/d/d8/InheritancePgmExample.svg/1600px-InheritancePgmExample.svg.png){width=60%}
 
-<p class="rights">Quelle: [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:InheritancePgmExample.svg), Urheber: [User:Cactus26](https://commons.wikimedia.org/wiki/User:Cactus26), [![](https://helpx.adobe.com/etc/designs/help/images/CC.png)](https://creativecommons.org/licenses/by-nc-sa/3.0/)</p>
+<p class="rights">Quelle: [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:InheritancePgmExample.svg), Urheber: [User:Cactus26](https://commons.wikimedia.org/wiki/User:Cactus26), [![](https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/CC_BY-SA_3.0.png/320px-CC_BY-SA_3.0.png)](https://creativecommons.org/licenses/by-nc-sa/3.0/)</p>
 
 ##
 
@@ -146,7 +146,7 @@ Quelle: [The Information Mapping® Method - Information Mapping](https://www.inf
 
 ## DITA-Basics in Code-Beispielen
 
-(Quelle: [Darwin Information Typing Architecture - Wikipedia](https://en.wikipedia.org/wiki/Darwin_Information_Typing_Architecture "Darwin Information Typing Architecture - Wikipedia")
+(Quelle: [Darwin Information Typing Architecture - Wikipedia](https://en.wikipedia.org/wiki/Darwin_Information_Typing_Architecture "Darwin Information Typing Architecture - Wikipedia"))s
 
 ## Ditamap file (table of contents) sample
 
